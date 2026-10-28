@@ -1,0 +1,7 @@
+import { getDb } from '../db';
+import { records } from '../db/schema';
+import { and,eq,ne,desc,inArray } from 'drizzle-orm';
+export async function history(userId:string,kinds?:string[]){const rows=await getDb().select().from(records).where(and(eq(records.userId,userId),ne(records.kind,'song'),...(kinds?.length?[inArray(records.kind,kinds)]:[]))).orderBy(desc(records.createdAt));return rows.map(r=>({id:r.id,kind:r.kind,date:r.createdAt,...JSON.parse(r.payload)}));}
+export async function save(userId:string,kind:string,payload:unknown,id=crypto.randomUUID()){if(kind==='profile'){id='profile_'+userId;await getDb().insert(records).values({id,userId,kind,payload:JSON.stringify(payload),createdAt:Date.now()}).onConflictDoUpdate({target:records.id,set:{payload:JSON.stringify(payload),createdAt:Date.now()}});return id;}await getDb().insert(records).values({id,userId,kind,payload:JSON.stringify(payload),createdAt:Date.now()}).onConflictDoNothing();return id;}
+
+export async function songLibrary(userId:string,id?:string){const rows=await getDb().select().from(records).where(and(eq(records.userId,userId),eq(records.kind,'song'),...(id?[eq(records.id,id)]:[]))).orderBy(desc(records.createdAt)).limit(id?1:200);return rows.filter(r=>!JSON.parse(r.payload).deleted).map(r=>{const s=JSON.parse(r.payload);return id?{...s,id:r.id}:{id:r.id,title:s.title,artist:s.artist,chordCount:s.sequence.length,noteCount:s.notes.length,reviewed:s.reviewed,date:r.createdAt};});}

@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {labExercise} from '../lib/accompaniment-lab.mjs';
+export default function Lab({onChoose}:{onChoose:(e:any)=>void}){const [a,setA]=useState('Em'),[b,setB]=useState('Am');return <details className="form-card"><summary>Laboratorio de acompañamiento · aislar cambios</summary><p>Elige dos acordes. Escucha, practica con cuerdas apagadas y luego cambia sin detener la mano. En el estudio puedes elegir ritmo y número de vueltas.</p><div className="song-fields">{[[a,setA],[b,setB]].map(([value,setter],i)=><label key={i}>Acorde {i+1}<select value={value as string} onChange={e=>(setter as (v:string)=>void)(e.target.value)}>{['Em','Am','C','G','D','A','E','Dm','Fmaj7','G7','B7'].map(c=><option key={c}>{c}</option>)}</select></label>)}</div><button className="primary" onClick={()=>onChoose(labExercise([a,b]))}>Preparar bucle de dos acordes</button></details>}

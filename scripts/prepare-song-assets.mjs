@@ -1,0 +1,11 @@
+import {cp,mkdir,readdir} from 'node:fs/promises';import {createRequire} from 'node:module';import path from 'node:path';
+const require=createRequire(import.meta.url),root=process.cwd(),publicDir=path.join(root,'public/vendor');
+const core=path.dirname(require.resolve('tesseract.js-core',{paths:[path.dirname(require.resolve('tesseract.js'))]}));
+await mkdir(publicDir+'/ocr/core',{recursive:true});await mkdir(publicDir+'/ocr/lang',{recursive:true});await mkdir(publicDir+'/pdf',{recursive:true});
+for(const name of await readdir(core))if(name.endsWith('.wasm.js'))await cp(path.join(core,name),publicDir+'/ocr/core/'+name);
+await cp('node_modules/tesseract.js/dist/worker.min.js',publicDir+'/ocr/worker.min.js');
+for(const lang of ['spa','eng'])await cp(`node_modules/@tesseract.js-data/${lang}/4.0.0/${lang}.traineddata.gz`,`${publicDir}/ocr/lang/${lang}.traineddata.gz`);
+await cp('node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs',publicDir+'/pdf/pdf.worker.min.mjs');
+for(const [from,to] of [['cmaps','cmaps'],['standard_fonts','fonts'],['wasm','wasm']])await cp('node_modules/pdfjs-dist/'+from,publicDir+'/pdf/'+to,{recursive:true});
+for(const [from,to] of [['node_modules/pdfjs-dist/LICENSE','pdf/LICENSE'],['node_modules/tesseract.js/LICENSE.md','ocr/LICENSE.md'],[core+'/LICENSE','ocr/core/LICENSE']])await cp(from,publicDir+'/'+to);
+console.log('PDF and OCR assets prepared on the same origin.');

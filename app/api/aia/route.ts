@@ -1,0 +1,22 @@
+import {getChatGPTUser} from '../../chatgpt-auth';
+import {history} from '../../../lib/store';
+import {readAia,writeAia} from '../../../lib/aia-store';
+import {buildAiaPlan,cleanSettings,createAiaSession,advanceAia,profileKey,sessionAttempt,stepFeedback} from '../../../lib/aia.mjs';
+import {speedPresets} from '../../../lib/practice-progression.mjs';
+const headers={'Cache-Control':'no-store'};
+async function context(userId:string){const [rows,stored]=await Promise.all([history(userId,['profile','attempt']),readAia(userId)]);const profile=rows.find(r=>r.kind==='profile')||{name:'Guitarrista',guitar:'Sin configurar',goal:'Aprender con una práctica equilibrada',minutes:10};return {rows,stored,profile};}
+function view(ctx:any,state:any){const attempts=ctx.rows.filter((r:any)=>r.kind==='attempt'),preview=buildAiaPlan(attempts,ctx.profile,state.settings,Date.now(),state.adaptations),staleProfile=!!state.session&&state.session.profileKey!==profileKey(ctx.profile),session=staleProfile?null:state.session,step=session?.steps[session.index],last=step?.type==='practice'?sessionAttempt(attempts,session,step):null;return {profile:ctx.profile,settings:preview.settings,preview,session,staleProfile,attempts,revision:state.revision,completed:state.completed||[],feedback:step?.type==='practice'?stepFeedback(last,step.assignment):null,lastAttempt:last};}
+export async function GET(){const u=await getChatGPTUser();if(!u)return Response.json({error:'Inicia sesión con tu cuenta para usar tu aprendizaje adaptativo.'},{status:401,headers});try{const ctx=await context(u.userId);return Response.json(view(ctx,ctx.stored.state),{headers});}catch{return Response.json({error:'No se pudo recuperar AIA. Puedes reintentar sin perder los intentos guardados.'},{status:500,headers});}}
+export async function POST(request:Request){const u=await getChatGPTUser();if(!u)return Response.json({error:'Inicia sesión para guardar tu sesión AIA.'},{status:401,headers});if(request.headers.get('origin')&&request.headers.get('origin')!==new URL(request.url).origin)return Response.json({error:'Origen no válido.'},{status:403,headers});
+ try{const body:any=await request.json(),ctx=await context(u.userId);let state=ctx.stored.state;if(body.revision!==state.revision)return Response.json({error:'La sesión ha cambiado en otra pestaña. Pulsa Actualizar AIA.'},{status:409,headers});
+ if(body.action==='settings'){if(state.session&&!state.session.completedAt)throw Error('Termina o reinicia la sesión antes de cambiar sus preferencias.');state={...state,settings:cleanSettings(body.settings,ctx.profile)};}
+ else if(body.action==='start'){
+  const settings=cleanSettings(body.settings||state.settings,ctx.profile),plan=buildAiaPlan(ctx.rows,ctx.profile,settings,Date.now(),state.adaptations);const completed=state.session?.completedAt?[{id:state.session.id,date:state.session.completedAt,focus:state.session.focus,minutes:state.session.settings.minutes,measured:state.session.results.filter((r:any)=>r.measured).length,self:state.session.results.filter((r:any)=>r.selfAssessment).length,results:state.session.results},...(state.completed||[])].slice(0,30):state.completed||[];
+  state={...state,settings,completed,session:createAiaSession(plan,ctx.profile,crypto.randomUUID())};
+ }else if(body.action==='next'){if(state.session?.profileKey!==profileKey(ctx.profile))throw Error('El perfil ha cambiado. Prepara una sesión nueva para este perfil.');state=advanceAia(state,ctx.rows,ctx.profile,body);}
+ else if(body.action==='simplify'){
+  const s=state.session,step=s?.steps[s.index];if(!s||s.completedAt||s.id!==body.sessionId||step?.id!==body.stepId||step.type!=='practice'||s.profileKey!==profileKey(ctx.profile))throw Error('Actualiza la sesión antes de simplificar.');
+  const assignment={...step.assignment,mode:step.assignment.track==='ritmo'&&s.settings.mode!=='free'?'timed':'free',tempo:speedPresets(step.assignment.exercise)[0].bpm,speedTier:'slow',reason:'Has elegido simplificar: conservamos el contenido, con menos exigencia temporal. El nivel adquirido se mantiene.'};state={...state,session:{...s,steps:s.steps.map((x:any,i:number)=>i===s.index?{...x,id:crypto.randomUUID(),assignment}:s.index===2&&i===3?{...x,assignment}:x)}};
+ }else throw Error('Acción no válida.');
+ state=await writeAia(u.userId,ctx.stored.raw,state);return Response.json(view(ctx,state),{headers});
+ }catch(e){return Response.json({error:e instanceof Error?e.message:'No se pudo guardar AIA.'},{status:400,headers});}}
