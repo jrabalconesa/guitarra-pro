@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 22
       - name: Restore verified assets
-        run: cat public-assets.part* | tar -xz
+        run: cat public-assets.part* | tar --skip-old-files -xz
       - run: node scripts/verify-pages-source.mjs
       - run: node --test lib/*.test.mjs
       - run: npm install --ignore-scripts --legacy-peer-deps --no-audit --no-fund
