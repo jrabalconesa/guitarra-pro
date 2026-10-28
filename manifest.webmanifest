@@ -2,24 +2,24 @@
   "name": "Guitarra PRO · Profesor y práctica adaptativa",
   "short_name": "Guitarra PRO",
   "description": "Practica guitarra con aprendizaje interactivo adaptativo",
-  "id": "/guitarra-pro/",
-  "start_url": "/guitarra-pro/",
-  "scope": "/guitarra-pro/",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#183b2b",
   "theme_color": "#183b2b",
   "icons": [
     {
-      "src": "/guitarra-pro/branding/guitarra-pro-android.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
+      "src": "./branding/guitarra-pro-mobile-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/guitarra-pro/branding/guitarra-pro-icon-32.png",
-      "sizes": "32x32",
+      "src": "./branding/guitarra-pro-mobile-512.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }

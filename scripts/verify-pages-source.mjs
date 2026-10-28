@@ -4,7 +4,7 @@ const version=JSON.parse(readFileSync('public/version.json','utf8'));
 let count=0;
 for(const [path,expected] of Object.entries(version.source_sha256)){
  const actual=createHash('sha256').update(readFileSync(path)).digest('hex');
- if(actual!==expected)throw Error('Source differs from Sites v26: '+path);
+ if(actual!==expected)throw Error('Shared source mismatch: '+path);
  count++;
 }
 console.log(`Verified ${count} original files against Sites ${version.sites_version}, commit ${version.sites_commit}`);
