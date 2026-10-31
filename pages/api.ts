@@ -1,9 +1,10 @@
+import * as backup from './backup';
 import * as practice from '../app/api/practice/route';
 import * as workspace from '../app/api/workspace/route';
 import * as aia from '../app/api/aia/route';
 import * as songs from '../app/api/songs/route';
 import {tutorialSearchLinks} from '../lib/song-import.mjs';
-const handlers:Record<string,any>={practice,workspace,aia,songs};
+const handlers:Record<string,any>={practice,workspace,aia,songs,backup};
 const nativeFetch=window.fetch.bind(window);
 window.fetch=async(input:any,init?:RequestInit)=>{
  const raw=input instanceof Request?input.url:String(input),url=new URL(raw,location.href);
