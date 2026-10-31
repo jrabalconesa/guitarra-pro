@@ -1,6 +1,6 @@
 {
-  "sites_version": 27,
-  "sites_commit": "6a795bf573802a20b8eea864d472c39884029da5",
+  "sites_version": 30,
+  "sites_commit": "bbc765ea192966a5dff56eba5c82cfae01e9ef2f",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
@@ -10,7 +10,7 @@
     "app/manual-links.tsx": "3ceb1f90a431807f21b6a60e8def1a5e261ecfb58cd6355191fbfe6ab4d0b828",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
     "app/accompaniment-lab.tsx": "4bb8e8aafc3022b099a8a7457ade6bb95f56eeda79899c18a6dda0a7e5781026",
-    "app/navigation.tsx": "3c1f64d39279a1b5ce1c01007d15129a488e729341cc115580a1321d562b8216",
+    "app/navigation.tsx": "6318739b9c05c76ff575d90662d89826c776db83d31f487e8dcd7881bbf32e56",
     "app/timing-feedback.tsx": "d97cfd68130ff4413e1bee8dfbfa4ecf825bd866aad6815de8f763030a24e7be",
     "app/aia.tsx": "dbb9100ed103c03f68b4ad56ab89dc5f030667de02f878fa8f1c131c7b314aff",
     "app/local-recorder.tsx": "7e2a0580f2dc5c9e138ca54769ab3f3727ea8f05b2660bcb01df74a6921fda32",
@@ -18,8 +18,8 @@
     "app/song-library.tsx": "95683ea5d8b740757e133aa180b75041e08db98a8eca37bb7c30dfe9d0bcda28",
     "app/chord-diagram.tsx": "746d15a095d0662a29b4f422b1240f87fbb1c0d740244ba47766e48ce2018e53",
     "app/caged.tsx": "d6ec1cd759ce52649f1bbf8fed79541e7193a48585bf733d5c7702df2dd0b718",
-    "app/layout.tsx": "7ca748c58ee19cd21e6eae01d9fba64bf08f30e198c8409aac9dfacaa3060279",
-    "app/globals.css": "a932dd494b3e34c26f907fb83b2e8ca840f989cdccdd44a6b4bd84ad0e81abac",
+    "app/layout.tsx": "695372241daf9e8f124524b83b1c5c65816019c85919139e15decb38f08e96b7",
+    "app/globals.css": "8eae901c11f024f2ee82a115627ea672340860b0f827ea7d5f22f0b87a5d0d34",
     "app/chatgpt-auth.ts": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
     "app/learning-hub.tsx": "89324ae452a0e96f25b5d41b37bd4b3aa98558727c6ffc6eba052be6f374c004",
     "app/audio-engine.tsx": "72a99f1df289d6bef44229acef03faa1c124ebc3c02c696c7d40ca77f1a67de6",
@@ -58,7 +58,7 @@
     "lib/song-timeline.test.mjs": "bb75c67b828eac87d7695c48e879992d3ec7e24dae68712d787c4bfa203e01a3",
     "lib/rhythms.mjs": "6ea1dd26a288fbd16f9d1644a0606634ddc323d35b93f76a65131476924ac029",
     "lib/aia.mjs": "f7c55e1676c7571c709c9c3c5000bdfb90920c95d16488c61d39d1ec7b46e0ed",
-    "public/favicon.ico": "782d474782570639dea7e7269b5f632077a16320f063cbf769fb37712f8ed1c9",
+    "public/favicon.ico": "6296045eadb884f4c53a61c8b9952002f1f48b4e71718a5b97a7ead55be40455",
     "public/favicon.svg": "3ee9f35ddc307a5612df1bc04643b5c405d7b89f04ccf12b3a94d9d66f7ff0b8",
     "public/manuales/Sistema_CAGED_Propuesta.pdf": "f4fc46ffb72612c5d879b07b93db1f26d09fd5fbbd8042bc29c4767f1983c869",
     "public/manuales/AIA_Guia_de_Uso.pdf": "3b3e0ecf41f2bcb875e6a9da337ea15d28bef93d6ee2eb5474a75425e8f6793f",
@@ -291,7 +291,9 @@
     "public/vendor/pdf/cmaps/UniKS-UTF8-V.bcmap": "9ecc6cf30dd354b9778ddba163b6cc7302b087ce9f39d1ba73472d2b75ed13ca",
     "public/vendor/pdf/cmaps/NWP-V.bcmap": "3a75fb7b59adfb172710758c425d8ac6c93fd5360a64dd4afd5dd04e60ab4b4d",
     "public/vendor/pdf/cmaps/Hiragana.bcmap": "2ed669394756dd9458651cd9995ab29ab691ecb7686659003306cdf22767a414",
-    "public/vendor/pdf/cmaps/UniJIS-UCS2-HW-H.bcmap": "16e87edca954177c0881c874859d6783220925d821b5cdfb8755b61ebd93f9ce"
+    "public/vendor/pdf/cmaps/UniJIS-UCS2-HW-H.bcmap": "16e87edca954177c0881c874859d6783220925d821b5cdfb8755b61ebd93f9ce",
+    "app/pro-nav-icon.tsx": "4bdf46479e596762ee0916be713230ec3c931b0d13ed156d9774d1004ef7ddf3"
   },
-  "release": "mobile-icons-2026-10-28"
+  "release": "mobile-icons-2026-10-28",
+  "navigation_reference": "Piano PRO"
 }

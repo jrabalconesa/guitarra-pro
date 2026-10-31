@@ -229,3 +229,7 @@ input,select,textarea{max-width:100%}.table-scroll,.fretboard-scroll,.caged-fret
  .music-hero small{grid-column:1/-1;grid-row:5;max-width:none;margin:0;position:relative}
 }
 @media screen and (max-width:699px){.large-reading .music-hero{display:grid}.large-reading .music-hero-copy{display:contents}.large-reading .music-hero-art{grid-column:1/-1;grid-row:4;height:220px;margin:16px 0 0}.large-reading .music-hero-art img{width:100%;height:220px;max-width:180px}.large-reading .music-hero button{grid-row:5}.large-reading .music-hero small{grid-row:6}.large-reading .music-hero h2,.large-reading .music-hero p{grid-column:1/-1}}
+
+/* Shared music navigation: canonical shapes from Piano PRO. */
+.pro-nav-icon{display:block;width:26px;height:26px;flex:0 0 26px;color:inherit;object-fit:contain}.pro-nav-aia{display:grid;place-items:center;font:800 13px/1 system-ui,sans-serif;letter-spacing:-.7px}
+@media(max-width:699px){.pro-nav-icon{width:28px;height:28px;flex-basis:28px}.pro-nav-aia{font-size:14px}}
