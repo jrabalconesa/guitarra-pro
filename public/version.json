@@ -1,12 +1,12 @@
 {
-  "sites_version": 35,
-  "sites_commit": "9b0c9fb0515cf6f92d88e61e826c71b92059dfba",
+  "sites_version": 36,
+  "sites_commit": "12f22dd3b12903ae0681f4049de01092cbe10aa8",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
     "app/audio-widgets.tsx": "dab38a29015e886890477106ac51f500d4ec1d4144d91ba5c8cedf1e5cebbd5f",
     "app/practice-studio.tsx": "920cf34c1e6ba3f5b7fe18bb259f478158f52b75ecadd9d2fe5c450d52be4241",
-    "app/page.tsx": "00a0b5c1037f30ae87b2b8c208f561e523656fe5d5eeeee34aa652abe7ba9884",
+    "app/page.tsx": "a6d70e03c2aa8b758c1c7b142b1c9b5b6a7237a70f83c0daf0ed04baf1f541c8",
     "app/manual-links.tsx": "3ceb1f90a431807f21b6a60e8def1a5e261ecfb58cd6355191fbfe6ab4d0b828",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
     "app/accompaniment-lab.tsx": "4bb8e8aafc3022b099a8a7457ade6bb95f56eeda79899c18a6dda0a7e5781026",
@@ -19,7 +19,7 @@
     "app/chord-diagram.tsx": "746d15a095d0662a29b4f422b1240f87fbb1c0d740244ba47766e48ce2018e53",
     "app/caged.tsx": "d6ec1cd759ce52649f1bbf8fed79541e7193a48585bf733d5c7702df2dd0b718",
     "app/layout.tsx": "18d4f512bbe9ca3035344680df2dcc8dc5dc8dd6471f4b712a51d7569ce9f864",
-    "app/globals.css": "616caaff55cf2a91a0ca0ecdf126676288507d0e36bd919ecf0546a82cfe187c",
+    "app/globals.css": "3d17a10b3c868a11e86232554ffb1c1866cf25a44f71b65472feb907fd683198",
     "app/chatgpt-auth.ts": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
     "app/learning-hub.tsx": "89324ae452a0e96f25b5d41b37bd4b3aa98558727c6ffc6eba052be6f374c004",
     "app/audio-engine.tsx": "72a99f1df289d6bef44229acef03faa1c124ebc3c02c696c7d40ca77f1a67de6",
@@ -64,7 +64,7 @@
     "public/branding/guitarra-pro-icon-32.png": "77b582fe6637ee62bcd16f4aaf750aaf764570c1304f93727a78d5aef42dfeb8",
     "public/branding/guitarra-pro-icon-512.png": "78895d37ca452e6f29990804cbef992066c79c52c92deef3096af49c7cb48d12",
     "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
-    "app/technique-catalog.tsx": "28f2d89aaae963d650508302ab5b3fe5c1529a751bda4b0dd318b69c6173d5ea"
+    "app/technique-catalog.tsx": "24192ca2ac353db05567209188da5f819aa85dbbb820d38e436fadc33784b858"
   },
   "release": "mobile-icons-2026-10-28",
   "navigation_reference": "Piano PRO",

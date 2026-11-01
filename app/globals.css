@@ -242,3 +242,4 @@ input,select,textarea{max-width:100%}.table-scroll,.fretboard-scroll,.caged-fret
 /* Shared music navigation: canonical shapes from Piano PRO. */
 .pro-nav-icon{display:block;width:26px;height:26px;flex:0 0 26px;color:inherit;object-fit:contain}.pro-nav-aia{display:grid;place-items:center;font:800 13px/1 system-ui,sans-serif;letter-spacing:-.7px}
 @media(max-width:699px){.pro-nav-icon{width:28px;height:28px;flex-basis:28px}.pro-nav-aia{font-size:14px}}
+.technique-subtitle{margin:30px 0 8px;font-size:1.35rem}.technique-chord-sequence{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}.technique-chord-sequence span{padding:7px 11px;border:1px solid #c5d3c7;border-radius:9px;background:#f5f8f3;font-weight:750}.technique-progression small{font-weight:750;color:#53724d}.technique-records{font-size:.88rem;color:#57705b}
