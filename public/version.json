@@ -1,12 +1,12 @@
 {
-  "sites_version": 36,
-  "sites_commit": "12f22dd3b12903ae0681f4049de01092cbe10aa8",
+  "sites_version": 37,
+  "sites_commit": "85b1cd38be5b01a9d2e6156132b9f5c72e24418c",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
     "app/audio-widgets.tsx": "dab38a29015e886890477106ac51f500d4ec1d4144d91ba5c8cedf1e5cebbd5f",
     "app/practice-studio.tsx": "920cf34c1e6ba3f5b7fe18bb259f478158f52b75ecadd9d2fe5c450d52be4241",
-    "app/page.tsx": "a6d70e03c2aa8b758c1c7b142b1c9b5b6a7237a70f83c0daf0ed04baf1f541c8",
+    "app/page.tsx": "28278c79c35fa7216f8eda4509943f4e482d1cae77b2aea86ce8ba0a06c66795",
     "app/manual-links.tsx": "3ceb1f90a431807f21b6a60e8def1a5e261ecfb58cd6355191fbfe6ab4d0b828",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
     "app/accompaniment-lab.tsx": "4bb8e8aafc3022b099a8a7457ade6bb95f56eeda79899c18a6dda0a7e5781026",
@@ -64,7 +64,7 @@
     "public/branding/guitarra-pro-icon-32.png": "77b582fe6637ee62bcd16f4aaf750aaf764570c1304f93727a78d5aef42dfeb8",
     "public/branding/guitarra-pro-icon-512.png": "78895d37ca452e6f29990804cbef992066c79c52c92deef3096af49c7cb48d12",
     "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
-    "app/technique-catalog.tsx": "24192ca2ac353db05567209188da5f819aa85dbbb820d38e436fadc33784b858"
+    "app/technique-catalog.tsx": "b97c53a6fefae8a0e95f40b8af52b3deaed432e58cfa1b485920c5bd3fdacb38"
   },
   "release": "mobile-icons-2026-10-28",
   "navigation_reference": "Piano PRO",
