@@ -2,6 +2,7 @@ const paths:Record<string,string>={"practicar": "<rect x=\"3\" y=\"4\" width=\"2
 // Silueta lineal de guitarra (no teclado) y CAGED como sección independiente.
 paths.practicar='<path d="M18 3c-2.7 0-4 2.5-3.3 5l-3 3c-2.8-1.2-5.2-.4-6.3 1.9-1.8 3.7 1.4 8.3 5.7 10.5s8.3 1.7 10.2-2.1c1.2-2.5.6-5.1-1.9-6.9l2.6-3.6c2.8.3 5.3-1.2 5.3-4.2V3z"/><path d="M17 5l-7 12m10-12-7 13m10-13-7 14M7 16l9 5"/>';
 paths.caged='<rect x="2" y="7" width="28" height="18" rx="4"/><text x="16" y="19.5" font-size="7" font-weight="700" text-anchor="middle" stroke="none" fill="currentColor">CAGED</text>';
+paths.tecnica='<rect x="3" y="4" width="26" height="24" rx="2"/><path d="M7 4v24M10.6 4v24M14.2 4v24M17.8 4v24M21.4 4v24M25 4v24M3 10h26M3 16h26M3 22h26" stroke-width="1"/><circle cx="10.6" cy="13" r="2" fill="currentColor"/><circle cx="17.8" cy="19" r="2" fill="currentColor"/>';
 paths.progreso='<path d="M4 27V6M4 27h25M8 23l7-7 5 3 8-11M22 8h6v6"/>';
 paths.profesor='<rect x="11" y="3" width="18" height="17" rx="1"/><path d="M15 8h10M15 12h7M7 29V15m0 4 7-5M3 29v-9a4 4 0 0 1 8 0v9"/><circle cx="7" cy="9" r="4"/>';
 paths.afinador='<path d="M5 24a14 14 0 0 1 22 0M16 24l5-11M9 25h14"/><circle cx="16" cy="24" r="2"/>';
