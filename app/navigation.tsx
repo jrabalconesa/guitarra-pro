@@ -4,7 +4,7 @@ import ProNavIcon from './pro-nav-icon';
 import {Menu,X} from 'lucide-react';
 const GROUPS:[string,string[]][]=[
  ['APRENDER Y PRACTICAR',['practica','aia','ruta']],
- ['TÉCNICA Y REPERTORIO',['caged','biblioteca']],
+ ['TÉCNICA Y REPERTORIO',['caged','tecnica','biblioteca']],
  ['MI APRENDIZAJE',['progreso','profesor']],
  ['INSTRUMENTOS Y CONFIGURACIÓN',['afinador']]
 ];
