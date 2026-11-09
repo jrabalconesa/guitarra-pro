@@ -68,5 +68,13 @@ document.getElementById('shape-diagrams').innerHTML=Object.entries(cagedShapes).
 
 const guideTitles={'1-1':'Forma y acorde','1-2':'Tónicas y octavas','1-3':'Cinco formas abiertas','2-1':'Cejillas móviles','2-2':'Tríadas e inversiones','2-3':'Cinco posiciones conectadas','3-1':'Mayor y menor','3-2':'Séptimas','3-3':'Conducción de voces','4-1':'Pentatónicas','4-2':'Pregunta y respuesta','4-3':'Cruzar posiciones','5-1':'Escalas diatónicas','5-2':'Arpegios y notas objetivo','5-3':'Extensiones 9, 11 y 13','6-1':'Seguir la armonía','6-2':'Crear frases propias','6-3':'Mini jam y arreglo'};
 const esc=s=>String(s).replace(/[&<>"]/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[x]));
-document.getElementById('guided-course').innerHTML=Object.entries(CAGED_GUIDE).map(([id,l])=>'<details class="guide-card"><summary>Lección '+id+' · '+esc(guideTitles[id])+'</summary><p><strong>Por qué importa:</strong> '+esc(l.why)+'</p><p><strong>Ejemplo explicado:</strong> '+esc(l.example)+'</p><strong>Ejercicio guiado:</strong><ol>'+l.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol><div class="guide-qa"><strong>Compruébalo:</strong> '+esc(l.question)+'<div><button type="button" aria-expanded="false" onclick="const a=this.parentElement.nextElementSibling;const showing=a.classList.toggle(\'visible\');this.setAttribute(\'aria-expanded\',showing);this.textContent=showing?\'Ocultar solución\':\'Mostrar solución\'">Mostrar solución</button></div><div class="answer"><strong>Respuesta:</strong> '+esc(l.answer)+'</div></div></details>').join('');
+document.getElementById('guided-course').innerHTML=Object.entries(CAGED_GUIDE).map(([id,l])=>'<details id="lesson-'+id+'" class="guide-card"><summary>Lección '+id+' · '+esc(guideTitles[id])+'</summary><p><strong>Por qué importa:</strong> '+esc(l.why)+'</p><p><strong>Ejemplo explicado:</strong> '+esc(l.example)+'</p><strong>Ejercicio guiado:</strong><ol>'+l.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol><div class="guide-qa"><strong>Compruébalo:</strong> '+esc(l.question)+'<div><button type="button" aria-expanded="false" onclick="const a=this.parentElement.nextElementSibling;const showing=a.classList.toggle(\'visible\');this.setAttribute(\'aria-expanded\',showing);this.textContent=showing?\'Ocultar solución\':\'Mostrar solución\'">Mostrar solución</button></div><div class="answer"><strong>Respuesta:</strong> '+esc(l.answer)+'</div></div></details>').join('');
+function openLessonFromHash(){
+ const match=location.hash.match(/^#lesson-([1-6]-[1-3])$/);
+ if(!match)return;
+ const chapter=document.getElementById('lesson-'+match[1]);
+ if(chapter){chapter.open=true;chapter.scrollIntoView({block:'start'});}
+}
+window.addEventListener('hashchange',openLessonFromHash);
+openLessonFromHash();
 </script></body></html>
