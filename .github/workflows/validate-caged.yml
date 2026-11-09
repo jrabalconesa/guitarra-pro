@@ -27,3 +27,17 @@ jobs:
         run: npm install --ignore-scripts --legacy-peer-deps --no-audit --no-fund
       - name: Construir versión de GitHub Pages (sin desplegar)
         run: npm run build:pages
+
+      - name: Instalar navegador para comprobar el manual visual
+        run: |
+          npm install --no-save --ignore-scripts --legacy-peer-deps --no-audit --no-fund playwright
+          npx playwright install --with-deps chromium
+      - name: Comprobar el manual en móvil, tableta y escritorio
+        run: node scripts/caged-visual-check.mjs
+      - name: Conservar capturas de comprobación visual
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: caged-revision-visual
+          path: caged-visual-evidence/
+          if-no-files-found: ignore
