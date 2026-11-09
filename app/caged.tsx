@@ -4,11 +4,13 @@ import {Play,Square,Download,Volume2} from 'lucide-react';
 import {MODULES,LESSONS,KEYS,OPEN,SHAPES,QUALITY,SOURCES,degree,interval,shapeNotes,zoneNotes,fretboardNotes,makeExercise,makeCagedTab,mod} from '../lib/caged.mjs';
 import {noteName} from '../lib/music.mjs';
 import {CAGED_GUIDE} from '../lib/caged-guide.mjs';
+import {CAGED_MASTERY} from '../lib/caged-mastery.mjs';
 import {useGuitarAudio,AudioPrefs} from './audio-engine';
 import {AudioControls} from './audio-widgets';
 export default function Caged({prefs,onPrefs,onPractice}:{prefs:AudioPrefs,onPrefs:(p:AudioPrefs)=>void,onPractice:(e:any)=>void}){
  const [lessonId,setLessonId]=useState('1-1'),[root,setRoot]=useState(0),[shape,setShape]=useState('C'),[quality,setQuality]=useState('major'),[layer,setLayer]=useState('chord'),[compact,setCompact]=useState(false),[full,setFull]=useState(false),[hide,setHide]=useState(false),[challenge,setChallenge]=useState(false),[feedback,setFeedback]=useState(''),[tempo,setTempo]=useState(60),[playing,setPlaying]=useState(''),[currentChord,setCurrentChord]=useState(''),[jam,setJam]=useState('vamp'),[done,setDone]=useState<Record<string,string[]>>({}),[saveStatus,setSaveStatus]=useState(''),[saving,setSaving]=useState(false),[variant,setVariant]=useState(false);
  const [showAnswer,setShowAnswer]=useState(false),[guidedChecks,setGuidedChecks]=useState<Record<string,boolean[]>>({});
+ const [masteryChecks,setMasteryChecks]=useState<Record<string,boolean[]>>({});
  const audio=useGuitarAudio(prefs),run=useRef(0),saveLock=useRef(false);
  const lesson=LESSONS.find(l=>l.id===lessonId)!,notes=(full?fretboardNotes(root,layer,quality):zoneNotes(root,shape,layer,quality)).filter((n:any)=>!compact||n.string<3),base=shapeNotes(root,shape,quality==='minor'||quality==='m7'),exercise=makeExercise(lesson,root,shape,quality);
  useEffect(()=>{let live=true;void fetch('/api/workspace').then(r=>r.ok?r.json():null).then((d:any)=>{if(live&&d?.data?.caged?.days)setDone(d.data.caged.days)}).catch(()=>{});return()=>{live=false}},[]);
@@ -40,6 +42,15 @@ export default function Caged({prefs,onPrefs,onPractice}:{prefs:AudioPrefs,onPre
  {showAnswer&&<p role="status"><b>Solución.</b> {CAGED_GUIDE[lessonId].answer}</p>}
  <p className="tiny">Las casillas son una ayuda temporal para estudiar; el progreso oficial se registra en la práctica de la aplicación.</p>
  </div></article>
+ <article className="form-card caged-mastery">
+ <h2>Comprueba tu dominio antes de avanzar</h2>
+ <p>Después de practicar esta lección, intenta los tres criterios <b>sin mirar la solución</b>. Puedes repetir el ejercicio tantas veces como necesites. No se considera una prueba automática.</p>
+ <p className="tiny"><b>Tempo orientativo:</b> {CAGED_MASTERY[lessonId].tempo} BPM cuando el ejercicio implique tocar al pulso; prioriza sonido claro y postura cómoda.</p>
+ <div>{CAGED_MASTERY[lessonId].criteria.map((criterion:string,i:number)=><label key={i} style={{display:'flex',gap:9,alignItems:'flex-start',margin:'10px 0'}}>
+ <input type="checkbox" checked={!!masteryChecks[lessonId]?.[i]} onChange={e=>setMasteryChecks(prev=>({...prev,[lessonId]:CAGED_MASTERY[lessonId].criteria.map((_:string,j:number)=>j===i?e.target.checked:!!prev[lessonId]?.[j])}))}/><span>{criterion}</span></label>)}</div>
+ <p role="status">{(masteryChecks[lessonId]||[]).filter(Boolean).length===3?'Has marcado los tres criterios. Repite en otra sesión para consolidar lo aprendido.':'Criterios marcados: '+(masteryChecks[lessonId]||[]).filter(Boolean).length+'/3. Repite los que aún no domines.'}</p>
+ <p className="tiny">Las marcas son una autoevaluación provisional de esta sesión y no se almacenan como un resultado certificado. Los ejercicios con micrófono y el registro de práctica siguen funcionando por separado.</p>
+ </article>
  <article className="form-card caged-map"><h2>Explora y escucha el mástil</h2><div className="caged-controls"><label>Acorde / tónica<select value={root} onChange={e=>setRoot(+e.target.value)}>{KEYS.map((k,i)=><option key={k} value={i}>{k}</option>)}</select></label><label>Calidad<select value={quality} onChange={e=>setQuality(e.target.value)}>{[['major','Mayor'],['minor','Menor'],['7','Dominante 7'],['maj7','Mayor 7'],['m7','Menor 7']].map(([q,n])=><option key={q} value={q}>{n}</option>)}</select></label><label>Capa<select value={layer} onChange={e=>setLayer(e.target.value)}><option value="chord">Acorde / arpegio</option><option value="pent">Pentatónica</option><option value="scale">Escala diatónica</option></select></label></div>
  <div className="caged-shapes" role="group" aria-label="Forma CAGED">{Object.keys(SHAPES).map(s=><button key={s} className={s===shape?'primary':'secondary'} aria-pressed={s===shape} onClick={()=>setShape(s)}>Forma {s}</button>)}</div>
  <p><b>Suena {KEYS[root]} {quality==='major'?'mayor':quality==='minor'?'menor':quality} · dibujo de {({C:'Do',A:'La',G:'Sol',E:'Mi',D:'Re'} as any)[shape]}.</b> Trastes {Math.min(...base.map((n:any)=>n.fret))}–{Math.max(...base.map((n:any)=>n.fret))}. Cambia de forma para recorrer el mismo acorde.</p>
