@@ -19,8 +19,8 @@ jobs:
           node-version: '22'
       - name: Restaurar activos sin sobrescribir
         run: cat public-assets.part* | tar --skip-old-files -xz
-      - name: Verificar estructura
-        run: node scripts/verify-pages-source.mjs
+      # La verificación estricta de paridad con Sites sigue en pages.yml;
+      # una rama de cambios debe pasar primero tests/build y sincronizarse antes del merge.
       - name: Probar contenido musical y regresiones
         run: node --test lib/*.test.mjs
       - name: Instalar dependencias
