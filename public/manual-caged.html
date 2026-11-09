@@ -47,7 +47,7 @@ const cagedShapes={
 };
 const midiOpen=[40,45,50,55,59,64];
 function shapeDiagram(name,data){
- const width=148,left=22,top=28,dx=20,dy=21,max=data.base+4;
+ const width=148,left=22,top=28,dx=20,dy=21,max=data.base+3;
  let out=['<svg viewBox="0 0 148 164" role="img" aria-label="Forma '+name+' de Do mayor; trastes '+data.base+' a '+max+'">'];
  for(let j=0;j<6;j++)out.push('<line x1="'+(left+j*dx)+'" y1="'+top+'" x2="'+(left+j*dx)+'" y2="'+(top+4*dy)+'" stroke="#879b92" stroke-width="1.2"/>');
  for(let k=0;k<5;k++)out.push('<line x1="'+left+'" y1="'+(top+k*dy)+'" x2="'+(left+5*dx)+'" y2="'+(top+k*dy)+'" stroke="#879b92" stroke-width="'+(data.base===1&&k===0?3:1)+'"/>');
