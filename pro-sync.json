@@ -3,26 +3,25 @@
   "app": "guitarra-pro",
   "repository": "jrabalconesa/guitarra-pro",
   "site_project_id": "appgprj_6ade185d59948191a37beca706a8afc4",
-  "updated": "2026-10-31",
+  "updated": "2026-11-09",
   "files": {
-    "app/page.tsx": "d7fa8c0542c81687560275618600259294e2025765ec7522d2ca21a655639bcc",
+    "app/page.tsx": "28278c79c35fa7216f8eda4509943f4e482d1cae77b2aea86ce8ba0a06c66795",
     "app/chatgpt-auth.ts": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
-    "app/globals.css": "8eae901c11f024f2ee82a115627ea672340860b0f827ea7d5f22f0b87a5d0d34",
+    "app/globals.css": "3d17a10b3c868a11e86232554ffb1c1866cf25a44f71b65472feb907fd683198",
     "app/local-recorder.tsx": "7e2a0580f2dc5c9e138ca54769ab3f3727ea8f05b2660bcb01df74a6921fda32",
     "app/audio-widgets.tsx": "dab38a29015e886890477106ac51f500d4ec1d4144d91ba5c8cedf1e5cebbd5f",
     "app/timing-feedback.tsx": "d97cfd68130ff4413e1bee8dfbfa4ecf825bd866aad6815de8f763030a24e7be",
     "app/chord-diagram.tsx": "746d15a095d0662a29b4f422b1240f87fbb1c0d740244ba47766e48ce2018e53",
     "app/learning-hub.tsx": "89324ae452a0e96f25b5d41b37bd4b3aa98558727c6ffc6eba052be6f374c004",
     "app/manual-links.tsx": "3ceb1f90a431807f21b6a60e8def1a5e261ecfb58cd6355191fbfe6ab4d0b828",
-    "app/layout.tsx": "695372241daf9e8f124524b83b1c5c65816019c85919139e15decb38f08e96b7",
     "app/aia.tsx": "dbb9100ed103c03f68b4ad56ab89dc5f030667de02f878fa8f1c131c7b314aff",
     "app/data-transfer.tsx": "f1b95682e38950229246c8036c8a647a79547c81b47cb79eb080ab6bb0cafb45",
     "app/audio-engine.tsx": "72a99f1df289d6bef44229acef03faa1c124ebc3c02c696c7d40ca77f1a67de6",
     "app/song-library.tsx": "95683ea5d8b740757e133aa180b75041e08db98a8eca37bb7c30dfe9d0bcda28",
     "app/practice-studio.tsx": "920cf34c1e6ba3f5b7fe18bb259f478158f52b75ecadd9d2fe5c450d52be4241",
-    "app/pro-nav-icon.tsx": "4bdf46479e596762ee0916be713230ec3c931b0d13ed156d9774d1004ef7ddf3",
-    "app/navigation.tsx": "6318739b9c05c76ff575d90662d89826c776db83d31f487e8dcd7881bbf32e56",
+    "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
+    "app/navigation.tsx": "cfb6b14c22ba99e3c55c541eebb434084ca9e963cff00be9464a917888de99af",
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
     "app/tuner.tsx": "517bfdc0456a1d418f475a1409489807f82a32c27f995eb144711d57de97b160",
     "app/caged.tsx": "d6ec1cd759ce52649f1bbf8fed79541e7193a48585bf733d5c7702df2dd0b718",
@@ -62,8 +61,15 @@
     "lib/song-import.mjs": "773d982563e90532ec0339bc47b3759c57d6dbf8a8475a1c2d24707050ce0253",
     "lib/rhythms.mjs": "6ea1dd26a288fbd16f9d1644a0606634ddc323d35b93f76a65131476924ac029",
     "lib/store.ts": "fca6902753e076c204b65c159d6c7a45411f8531116125c58c703c6cf5f9a7bd",
-    "lib/music.mjs": "f65d852c18ef60b578dfa1a5cd9117d1a04cd17fdcc0c797efc5a3549a69b96e",
+    "lib/music.mjs": "047b918bd9272924e46f018d8748fbfaab80db642fe2f43e95662b04dff8abf3",
     "lib/practice-validation.mjs": "50c05d351d61ee462bb0e37ef6c9c4e7324fad43591a3646468337f7be64a54f"
   },
-  "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically"
+  "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically",
+  "platform_files": {
+    "app/layout.tsx": {
+      "site_sha256": "090d4865071d483b6a8e5be8adbe68a72e26cfd41384c373325d86f68b5814fd",
+      "github_sha256": "18d4f512bbe9ca3035344680df2dcc8dc5dc8dd6471f4b712a51d7569ce9f864",
+      "policy": "Platform-specific URL adapter. Preserve the Site-relative and GitHub Pages absolute/public form; do not copy either version verbatim over the other."
+    }
+  }
 }
