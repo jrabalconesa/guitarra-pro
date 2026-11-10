@@ -20,7 +20,7 @@
     "app/chord-diagram.tsx": "746d15a095d0662a29b4f422b1240f87fbb1c0d740244ba47766e48ce2018e53",
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
     "app/data-transfer.tsx": "f1b95682e38950229246c8036c8a647a79547c81b47cb79eb080ab6bb0cafb45",
-    "app/globals.css": "727209446eb304c1f7ec075b5b06e237d886e22443ba71d6db05850dfc4f193b",
+    "app/globals.css": "59cdc183a9badeb82842eb71a3985c7afcd24dc35a5175a277d2efe3647732f4",
     "app/learning-hub.tsx": "89324ae452a0e96f25b5d41b37bd4b3aa98558727c6ffc6eba052be6f374c004",
     "app/local-recorder.tsx": "7e2a0580f2dc5c9e138ca54769ab3f3727ea8f05b2660bcb01df74a6921fda32",
     "app/manual-links.tsx": "02e471ed181876ed3845dca6ca6f15f874e1a641e23349bd30f72c78591685cc",
@@ -29,7 +29,7 @@
     "app/page.tsx": "28278c79c35fa7216f8eda4509943f4e482d1cae77b2aea86ce8ba0a06c66795",
     "app/practice-studio.tsx": "57a14f0f2f89f65fa290b70abc28a4769c6af77ffa682fc87a8b23a3d27fd7d9",
     "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
-    "app/song-library.tsx": "18edb8c9ec1a6bd8266381992a97f0a7692df1d2b9cdd1a950618709170ee07f",
+    "app/song-library.tsx": "fbb3416589a1130d1e05c7eceb067c54aae2692f9414a694f33329ea59155af1",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
     "app/technique-catalog.tsx": "9c2a165d56fd870e61252dc452c81cb5fc15cb060be82583dba5086a72134fca",
     "app/timing-feedback.tsx": "d97cfd68130ff4413e1bee8dfbfa4ecf825bd866aad6815de8f763030a24e7be",
@@ -72,7 +72,10 @@
     "lib/rhythm-accompaniment.mjs": "400b48b3f7e61ddae645d9a264ff3d7dab1c5f0e19ff6ed1853bcbeb91e2d88b",
     "lib/rhythm-accompaniment.test.mjs": "1e4eb4ef47a8cbd805d767ddfa903d603b921d3e6a5aaf328aebd30ac20ff733",
     "lib/playback-settings.mjs": "0be5e68b7cdcbcd6d8f626069372b7b61a5cb857cb52b58023d5f00621205dad",
-    "lib/playback-settings.test.mjs": "394d4fa5f384d3da91a47fcb01f8e21c27fa727a58f99b0a87d936b99290d222"
+    "lib/playback-settings.test.mjs": "394d4fa5f384d3da91a47fcb01f8e21c27fa727a58f99b0a87d936b99290d222",
+    "lib/song-editor.mjs": "1a1e107c5303cccbe97aa8bf67707911f1393dfc0db35ad975bc110e15c3757a",
+    "lib/song-editor.test.mjs": "7ecb6eb04abf394135e382823874a68abc38dbec7ce9e593caf63ad8fb355b21",
+    "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3"
   },
   "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically",
   "platform_files": {
