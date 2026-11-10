@@ -81,8 +81,8 @@
   "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically",
   "platform_files": {
     "app/layout.tsx": {
-      "site_sha256": "090d4865071d483b6a8e5be8adbe68a72e26cfd41384c373325d86f68b5814fd",
-      "github_sha256": "18d4f512bbe9ca3035344680df2dcc8dc5dc8dd6471f4b712a51d7569ce9f864",
+      "site_sha256": "6cfa53ad7aad52166970f950fafedad4ba8f45273c129c03b8006aefa6859700",
+      "github_sha256": "43ff2de330f4febf4a7bcefe85665913b344a3ac97a8c735e78010183ffbe429",
       "policy": "Platform-specific URL adapter. Preserve the Site-relative and GitHub Pages absolute/public form; do not copy either version verbatim over the other."
     }
   }
