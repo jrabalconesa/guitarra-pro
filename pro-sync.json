@@ -75,7 +75,8 @@
     "lib/playback-settings.test.mjs": "394d4fa5f384d3da91a47fcb01f8e21c27fa727a58f99b0a87d936b99290d222",
     "lib/song-editor.mjs": "1a1e107c5303cccbe97aa8bf67707911f1393dfc0db35ad975bc110e15c3757a",
     "lib/song-editor.test.mjs": "7ecb6eb04abf394135e382823874a68abc38dbec7ce9e593caf63ad8fb355b21",
-    "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3"
+    "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3",
+    "public/favicon.svg": "b65e5e9642905ca20029e0dde9ec9bc2be2fb6d9d087dcf2f78356be5a8dd62a"
   },
   "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically",
   "platform_files": {
