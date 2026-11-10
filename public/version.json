@@ -1,11 +1,11 @@
 {
-  "sites_version": 39,
-  "sites_commit": "9b16c2274f45241abb89b3a4cdd4ab87781f4b47",
+  "sites_version": 40,
+  "sites_commit": "322634d032170b70bc10aac2b63229bb212ed231",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
     "app/audio-widgets.tsx": "dab38a29015e886890477106ac51f500d4ec1d4144d91ba5c8cedf1e5cebbd5f",
-    "app/practice-studio.tsx": "920cf34c1e6ba3f5b7fe18bb259f478158f52b75ecadd9d2fe5c450d52be4241",
+    "app/practice-studio.tsx": "002808dd734c0b5ca4e36d55f2341575fe7c441f1b290d5a40c5a7e1af5fc162",
     "app/page.tsx": "28278c79c35fa7216f8eda4509943f4e482d1cae77b2aea86ce8ba0a06c66795",
     "app/manual-links.tsx": "02e471ed181876ed3845dca6ca6f15f874e1a641e23349bd30f72c78591685cc",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
@@ -19,7 +19,7 @@
     "app/chord-diagram.tsx": "746d15a095d0662a29b4f422b1240f87fbb1c0d740244ba47766e48ce2018e53",
     "app/caged.tsx": "fc5fa607dbefecc27c1b4963e66e48613034cab87b752648949cabf514f174de",
     "app/layout.tsx": "18d4f512bbe9ca3035344680df2dcc8dc5dc8dd6471f4b712a51d7569ce9f864",
-    "app/globals.css": "07ea883eb5e28396bb5be0f0ccd7eeb1d96198dfaa0530dd9347cb24be82aef8",
+    "app/globals.css": "727209446eb304c1f7ec075b5b06e237d886e22443ba71d6db05850dfc4f193b",
     "app/chatgpt-auth.ts": "4265a2e7c2dcb3a6f4b7026f762bf5b6e4caec76cc13c0a45987ee9a9f2e42cc",
     "app/learning-hub.tsx": "89324ae452a0e96f25b5d41b37bd4b3aa98558727c6ffc6eba052be6f374c004",
     "app/audio-engine.tsx": "72a99f1df289d6bef44229acef03faa1c124ebc3c02c696c7d40ca77f1a67de6",
@@ -64,7 +64,7 @@
     "public/branding/guitarra-pro-icon-32.png": "77b582fe6637ee62bcd16f4aaf750aaf764570c1304f93727a78d5aef42dfeb8",
     "public/branding/guitarra-pro-icon-512.png": "78895d37ca452e6f29990804cbef992066c79c52c92deef3096af49c7cb48d12",
     "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
-    "app/technique-catalog.tsx": "b97c53a6fefae8a0e95f40b8af52b3deaed432e58cfa1b485920c5bd3fdacb38",
+    "app/technique-catalog.tsx": "9c2a165d56fd870e61252dc452c81cb5fc15cb060be82583dba5086a72134fca",
     "app/api/backup/route.ts": "a991c4da39118a0b49d7835403bcb6429dc7dcc9835f0cc5ebcee1ff9a5f9957",
     "app/data-transfer.tsx": "f1b95682e38950229246c8036c8a647a79547c81b47cb79eb080ab6bb0cafb45",
     "lib/backup.mjs": "71d7566f558a48bfa0c0cd32ef543fa7a3e5c4ec30cb86647d59b4ea7b210b1b",
@@ -72,9 +72,11 @@
     "lib/caged-guide.mjs": "61401b88b6d8c324dc98e8385b5391bbc0abfaa2bf421250a882bf9a6fb20254",
     "lib/caged-guide.test.mjs": "dceb4c49735c9b22c2a275ac8c406e243293e2f66e9266b5b028e701b8336aa9",
     "lib/caged-mastery.mjs": "7641f836aa6cfed957b3500edd3091df2a767ee5c7d5e678f96524cef44b6041",
-    "public/manual-caged.html": "0f89da4427676381dc8c2c54bb6a780f420a3a497ff037c8bdfff0043c59c815"
+    "public/manual-caged.html": "0f89da4427676381dc8c2c54bb6a780f420a3a497ff037c8bdfff0043c59c815",
+    "lib/rhythm-accompaniment.mjs": "400b48b3f7e61ddae645d9a264ff3d7dab1c5f0e19ff6ed1853bcbeb91e2d88b",
+    "lib/rhythm-accompaniment.test.mjs": "1e4eb4ef47a8cbd805d767ddfa903d603b921d3e6a5aaf328aebd30ac20ff733"
   },
-  "release": "caged-expanded-2026-11-09",
+  "release": "rhythm-chord-context-2026-11-10",
   "navigation_reference": "Piano PRO",
   "backup_format": "guitarra-pro v1"
 }
