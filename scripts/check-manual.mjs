@@ -1,0 +1,12 @@
+import {readFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+const hash=b=>createHash('sha256').update(b).digest('hex');
+const m=JSON.parse(readFileSync('public/manuales/manual-version.json','utf8'));
+if(!m.version||!m.reviewed_on||!m.reviewed_source_sha256)throw Error('Falta la revisión del manual');
+for(const [path,sha] of Object.entries(m.reviewed_source_sha256))if(hash(readFileSync(path))!==sha)throw Error('Revisar el manual por cambios en '+path+'. Si el cambio es menor, registrar la revisión sin regenerar los documentos.');
+for(const [path,sha] of Object.entries(m.outputs))if(hash(readFileSync(path))!==sha)throw Error('El archivo del manual no coincide: '+path);
+if(!readFileSync('public/manuales/Guitarra_PRO_Manual_de_Uso.pdf').subarray(0,5).equals(Buffer.from('%PDF-')))throw Error('PDF del manual no válido');
+if(readFileSync('public/manuales/Guitarra_PRO_Manual_de_Uso.docx').subarray(0,2).toString()!=='PK')throw Error('Word del manual no válido');
+const links=readFileSync('app/manual-links.tsx','utf8'),library=readFileSync('app/song-library.tsx','utf8');
+if(!links.includes('Guitarra_PRO_Manual_de_Uso.pdf')||!library.includes('library-manuals'))throw Error('Falta el acceso desde Biblioteca');
+console.log('Manual '+m.version+' verificado: revisión de '+Object.keys(m.reviewed_source_sha256).length+' fuentes, PDF y Word.');
