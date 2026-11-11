@@ -26,7 +26,7 @@
     "app/manual-links.tsx": "0f95004125718ed7750bc1deb91813ca6c58c25d0366dbcee9539987d739c0e4",
     "app/mcp/route.ts": "31a01f04833d72bcca86fe6ba72a302024c4395177e51128d368d0eb0bb62375",
     "app/navigation.tsx": "cfb6b14c22ba99e3c55c541eebb434084ca9e963cff00be9464a917888de99af",
-    "app/page.tsx": "28278c79c35fa7216f8eda4509943f4e482d1cae77b2aea86ce8ba0a06c66795",
+    "app/page.tsx": "c1ff34bf89ee8a6812dec5e94174e563d53645193901715c54d5a9f7440ff8ca",
     "app/practice-studio.tsx": "57a14f0f2f89f65fa290b70abc28a4769c6af77ffa682fc87a8b23a3d27fd7d9",
     "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
     "app/song-library.tsx": "e5335e11989319f218996b1a0140420c18cf37af5bc706a8f7f0371ed7dfab68",
@@ -76,7 +76,9 @@
     "lib/song-editor.mjs": "1a1e107c5303cccbe97aa8bf67707911f1393dfc0db35ad975bc110e15c3757a",
     "lib/song-editor.test.mjs": "7ecb6eb04abf394135e382823874a68abc38dbec7ce9e593caf63ad8fb355b21",
     "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3",
-    "public/favicon.svg": "b65e5e9642905ca20029e0dde9ec9bc2be2fb6d9d087dcf2f78356be5a8dd62a"
+    "public/favicon.svg": "b65e5e9642905ca20029e0dde9ec9bc2be2fb6d9d087dcf2f78356be5a8dd62a",
+    "scripts/check-pdf-assets.mjs": "d65d9f7d2df301a61f552b3bda682454bee658d20fc7b01d990ff1f3701c19f7",
+    "scripts/prepare-song-assets.mjs": "1228959ca7fdd3a70d944904cb7d2fdb380303fae69baf74a148dfe8a245505e"
   },
   "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically",
   "platform_files": {

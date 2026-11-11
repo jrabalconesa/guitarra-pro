@@ -9,3 +9,5 @@ await cp('node_modules/pdfjs-dist/legacy/build/pdf.worker.min.mjs',publicDir+'/p
 for(const [from,to] of [['cmaps','cmaps'],['standard_fonts','fonts'],['wasm','wasm']])await cp('node_modules/pdfjs-dist/'+from,publicDir+'/pdf/'+to,{recursive:true});
 for(const [from,to] of [['node_modules/pdfjs-dist/LICENSE','pdf/LICENSE'],['node_modules/tesseract.js/LICENSE.md','ocr/LICENSE.md'],[core+'/LICENSE','ocr/core/LICENSE']])await cp(from,publicDir+'/'+to);
 console.log('PDF and OCR assets prepared on the same origin.');
+
+await import("./check-pdf-assets.mjs");

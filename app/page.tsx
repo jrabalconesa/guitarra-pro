@@ -34,7 +34,7 @@ export default function Page(){
   try{const result=await persist('profile',profile,false);if(typeof result.id!=='string'||!result.id)throw Error('No se ha podido confirmar el guardado. Inténtalo de nuevo.');setProfileSave('saved');setReady(true);setRecords(current=>[{...profile,id:result.id,kind:'profile',date:Date.now()},...current.filter(r=>r.kind!=='profile')]);}
   catch(e){setProfileSave('error');setProfileError(e instanceof Error&&e.message==='Failed to fetch'?'No se pudo conectar. Comprueba tu conexión y vuelve a intentarlo.':e instanceof Error?e.message:'No se pudo guardar el perfil. Inténtalo de nuevo.');}
  }
- function goTab(id:string){if(!TABS.some(t=>t[0]===id))return;setTab(id);if(location.hash!=='#'+id)window.history.pushState(null,'','#'+id);}
+ function goTab(id:string){if(!TABS.some(t=>t[0]===id))return;setTab(id);if(id!==tab)window.scrollTo(0,0);if(location.hash!=='#'+id)window.history.pushState(null,'','#'+id);}
  useEffect(()=>{const restore=()=>{const id=location.hash.slice(1);if(TABS.some(t=>t[0]===id))setTab(id)};restore();window.addEventListener('hashchange',restore);window.addEventListener('popstate',restore);return()=>{window.removeEventListener('hashchange',restore);window.removeEventListener('popstate',restore)}},[]);
  useEffect(()=>{document.title='Guitarra PRO'},[tab]);
  const [large,setLarge]=useState(false);

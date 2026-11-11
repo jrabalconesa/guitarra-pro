@@ -12,7 +12,9 @@
     "start": "node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js dev --config dist/server/wrangler.json --local --persist-to .wrangler/state --ip 127.0.0.1 --inspector-port 0",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
-    "build:pages": "vite build --config vite.pages.config.ts"
+    "build:pages": "vite build --config vite.pages.config.ts",
+    "prebuild": "node scripts/prepare-song-assets.mjs",
+    "prebuild:pages": "node scripts/prepare-song-assets.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -30,7 +32,7 @@
     "lucide-react": "^1.31.0",
     "next": "16.3.4",
     "next-themes": "^0.4.6",
-    "pdfjs-dist": "^6.4.299",
+    "pdfjs-dist": "6.4.299",
     "radix-ui": "^1.6.7",
     "react": "19.2.6",
     "react-day-picker": "^10.0.1",
