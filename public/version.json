@@ -1,13 +1,13 @@
 {
-  "sites_version": 43,
-  "sites_commit": "e205aa8de2f63421084d93df51cbeee236ab3cf7",
+  "sites_version": 46,
+  "sites_commit": "acdd0b6f65509b15a9533d623ac295006ca39b48",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
     "app/audio-widgets.tsx": "dab38a29015e886890477106ac51f500d4ec1d4144d91ba5c8cedf1e5cebbd5f",
     "app/practice-studio.tsx": "57a14f0f2f89f65fa290b70abc28a4769c6af77ffa682fc87a8b23a3d27fd7d9",
     "app/page.tsx": "28278c79c35fa7216f8eda4509943f4e482d1cae77b2aea86ce8ba0a06c66795",
-    "app/manual-links.tsx": "02e471ed181876ed3845dca6ca6f15f874e1a641e23349bd30f72c78591685cc",
+    "app/manual-links.tsx": "0f95004125718ed7750bc1deb91813ca6c58c25d0366dbcee9539987d739c0e4",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
     "app/accompaniment-lab.tsx": "4bb8e8aafc3022b099a8a7457ade6bb95f56eeda79899c18a6dda0a7e5781026",
     "app/navigation.tsx": "cfb6b14c22ba99e3c55c541eebb434084ca9e963cff00be9464a917888de99af",
@@ -15,7 +15,7 @@
     "app/aia.tsx": "dbb9100ed103c03f68b4ad56ab89dc5f030667de02f878fa8f1c131c7b314aff",
     "app/local-recorder.tsx": "7e2a0580f2dc5c9e138ca54769ab3f3727ea8f05b2660bcb01df74a6921fda32",
     "app/tuner.tsx": "517bfdc0456a1d418f475a1409489807f82a32c27f995eb144711d57de97b160",
-    "app/song-library.tsx": "fbb3416589a1130d1e05c7eceb067c54aae2692f9414a694f33329ea59155af1",
+    "app/song-library.tsx": "e5335e11989319f218996b1a0140420c18cf37af5bc706a8f7f0371ed7dfab68",
     "app/chord-diagram.tsx": "746d15a095d0662a29b4f422b1240f87fbb1c0d740244ba47766e48ce2018e53",
     "app/caged.tsx": "e0a2713172bc2dedde1b4041215d146d47b501ec7eefdec1f9e76b3ac630d23d",
     "app/layout.tsx": "43ff2de330f4febf4a7bcefe85665913b344a3ac97a8c735e78010183ffbe429",
@@ -82,7 +82,7 @@
     "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3",
     "public/favicon.svg": "b65e5e9642905ca20029e0dde9ec9bc2be2fb6d9d087dcf2f78356be5a8dd62a"
   },
-  "release": "favicon-pick-2026-11-10",
+  "release": "manual-library-2026-11-11",
   "navigation_reference": "Piano PRO",
   "backup_format": "guitarra-pro v1"
 }
