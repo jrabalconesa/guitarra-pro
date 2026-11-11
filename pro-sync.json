@@ -23,7 +23,7 @@
     "app/globals.css": "59cdc183a9badeb82842eb71a3985c7afcd24dc35a5175a277d2efe3647732f4",
     "app/learning-hub.tsx": "89324ae452a0e96f25b5d41b37bd4b3aa98558727c6ffc6eba052be6f374c004",
     "app/local-recorder.tsx": "7e2a0580f2dc5c9e138ca54769ab3f3727ea8f05b2660bcb01df74a6921fda32",
-    "app/manual-links.tsx": "0f95004125718ed7750bc1deb91813ca6c58c25d0366dbcee9539987d739c0e4",
+    "app/manual-links.tsx": "b1056adc425f3097794a48fdcb3b641825cdccebd842367fc6378c778ec3c829",
     "app/mcp/route.ts": "31a01f04833d72bcca86fe6ba72a302024c4395177e51128d368d0eb0bb62375",
     "app/navigation.tsx": "cfb6b14c22ba99e3c55c541eebb434084ca9e963cff00be9464a917888de99af",
     "app/page.tsx": "c1ff34bf89ee8a6812dec5e94174e563d53645193901715c54d5a9f7440ff8ca",
@@ -61,7 +61,7 @@
     "lib/practice-progression.test.mjs": "504d52f7634b983fb545190ad2967f9663000ef0f014d827f1d5d3709153d09e",
     "lib/practice-validation.mjs": "50c05d351d61ee462bb0e37ef6c9c4e7324fad43591a3646468337f7be64a54f",
     "lib/rhythms.mjs": "6ea1dd26a288fbd16f9d1644a0606634ddc323d35b93f76a65131476924ac029",
-    "lib/song-import.mjs": "773d982563e90532ec0339bc47b3759c57d6dbf8a8475a1c2d24707050ce0253",
+    "lib/song-import.mjs": "1f1043f491850583ef84085e2099b4e41b75d5b89bc06517fcf8c9fb95bca614",
     "lib/song-timeline.mjs": "b96f072f1826909098febea81927df205e067d347a4773ad69d4359358d28552",
     "lib/song-timeline.test.mjs": "bb75c67b828eac87d7695c48e879992d3ec7e24dae68712d787c4bfa203e01a3",
     "lib/store.ts": "fca6902753e076c204b65c159d6c7a45411f8531116125c58c703c6cf5f9a7bd",
@@ -78,7 +78,13 @@
     "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3",
     "public/favicon.svg": "b65e5e9642905ca20029e0dde9ec9bc2be2fb6d9d087dcf2f78356be5a8dd62a",
     "scripts/check-pdf-assets.mjs": "d65d9f7d2df301a61f552b3bda682454bee658d20fc7b01d990ff1f3701c19f7",
-    "scripts/prepare-song-assets.mjs": "1228959ca7fdd3a70d944904cb7d2fdb380303fae69baf74a148dfe8a245505e"
+    "scripts/prepare-song-assets.mjs": "1228959ca7fdd3a70d944904cb7d2fdb380303fae69baf74a148dfe8a245505e",
+    "scripts/check-manual.mjs": "ba9a06bea62222a64bd6ea13a8db81dfcc9f383fde9f6eb659a2588298592609",
+    "lib/song-import-tab.test.mjs": "66224598644f3825a890c7a8e2a69cbdb7428ffd77d97e0285169b28666cf29b",
+    "public/manuales/manual-version.json": "fb096f9d2eb6a6f8aded6c4bf63436bcfd71510d96f5425cac2b0be8183f74cf",
+    "public/manuales/Guitarra_PRO_Manual_de_Uso.pdf": "09c1e10082147deb50483f51a86804cb6c847a0660b4dd13b6b9b0ec4cdbc0ef",
+    "public/manuales/Guitarra_PRO_Manual_de_Uso.docx": "a52e3c169b00984064a05909e2335c21016c41e127b69dd90ede81dc631c66e8",
+    "public/manuales/Guitarra_PRO_Manual_de_Uso_Pack.zip": "2cf50dcae18c34f86f602c32508f81d221536fc8fe61f5ef4b37046cf72192cb"
   },
   "policy": "three-way: compare both against these hashes; transfer one-sided changes; stop on conflicting edits; preserve platform adapters and Site audience; never sync user data automatically",
   "platform_files": {
