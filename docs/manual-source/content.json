@@ -1,0 +1,473 @@
+[
+  {
+    "title": "1. Orientación y primeros pasos",
+    "image": "01-practicar.jpg",
+    "intro": "Guitarra PRO reúne práctica con micrófono, ejercicios visuales y un recorrido progresivo. Puedes usarla con guitarra española, acústica o eléctrica con sonido limpio. Este manual explica la edición 8 y sus herramientas actuales; no necesitas saber solfeo.",
+    "steps": [
+      "Abre Profesor y comprueba tu nombre, guitarra, objetivo y minutos por sesión. Pulsa Guardar mi perfil y espera la confirmación.",
+      "Entra en Afinador. Prepara las seis cuerdas y escucha una referencia si lo necesitas.",
+      "Vuelve a Practicar y empieza con Punteo y notas, en A mi ritmo. Escucha antes de tocar.",
+      "Cuando quieras una propuesta guiada, abre AIA. Para elegir tú el contenido, utiliza Mi recorrido o el catálogo técnico.",
+      "Al terminar, consulta Mi progreso y anota una sola cosa que quieras mejorar."
+    ],
+    "note": "En ordenador y tableta aparece el menú lateral. En móvil, la barra inferior contiene accesos principales y Menú abre todas las secciones. Letra grande o Aa mejora la lectura."
+  },
+  {
+    "title": "2. Acceso y conservación de los datos",
+    "intro": "Las dos publicaciones comparten contenidos y herramientas de aprendizaje, pero guardan los datos de forma distinta. Cambiar de publicación no traslada automáticamente tu historial ni tus canciones.",
+    "table": [
+      [
+        "Aspecto",
+        "ChatGPT Sites",
+        "GitHub Pages"
+      ],
+      [
+        "Acceso",
+        "Sitio privado con tu sesión autorizada",
+        "Página web pública"
+      ],
+      [
+        "Perfil, historial y AIA",
+        "Asociados a tu cuenta de Sites",
+        "En este navegador mediante IndexedDB"
+      ],
+      [
+        "Canciones originales",
+        "Guardadas para tu cuenta en Sites",
+        "Guardadas en este navegador"
+      ],
+      [
+        "Otro dispositivo",
+        "Accede a la misma cuenta",
+        "Traslada una copia y los originales por separado"
+      ],
+      [
+        "Profesor conectado",
+        "Puede consultar el contexto mediante Guitarra PRO en ChatGPT",
+        "El navegador no comparte su progreso directamente con ChatGPT"
+      ]
+    ],
+    "steps": [
+      "Para retomar tu aprendizaje en Sites, entra con la misma cuenta y espera a que se cargue el perfil.",
+      "En GitHub utiliza el mismo navegador y perfil del navegador. El modo privado, otro navegador o borrar los datos del sitio puede dejarte sin acceso a la copia local.",
+      "Antes de cambiar de dispositivo, exporta una copia JSON desde Profesor. Guarda también por separado los PDF, imágenes y grabaciones.",
+      "No confundas una sincronización del código de la aplicación con una sincronización de tus datos personales."
+    ],
+    "note": "Si no aparece el historial esperado, comprueba primero la publicación, la cuenta y el navegador. No vuelvas a importar ni a subir archivos hasta identificar dónde están tus datos."
+  },
+  {
+    "title": "3. Sonido, micrófono y símbolos",
+    "intro": "La aplicación necesita una señal limpia para comprobar notas y ataques. La reproducción de ejemplos se activa al pulsar un botón. El análisis de sonido se realiza en el dispositivo; las puntuaciones no sustituyen a la escucha musical.",
+    "table": [
+      [
+        "Control o símbolo",
+        "Qué significa"
+      ],
+      [
+        "Volumen del ejemplo",
+        "Nivel de las muestras que escuchas"
+      ],
+      [
+        "Refuerzo del ejemplo",
+        "Amplificación adicional de la reproducción"
+      ],
+      [
+        "Ganancia de entrada",
+        "Amplifica el micrófono y también el ruido"
+      ],
+      [
+        "0 en tablatura",
+        "Cuerda al aire, sin pisar un traste"
+      ],
+      [
+        "↓ / ↑",
+        "Rasgueo hacia el suelo / hacia el techo"
+      ],
+      [
+        "B / S / —",
+        "Bajo del acorde / silencio o ausencia de ataque"
+      ],
+      [
+        "(↓)",
+        "Ataque apagado"
+      ],
+      [
+        "p, i, m, a",
+        "Pulgar, índice, medio y anular"
+      ],
+      [
+        "BPM o ppm",
+        "Pulsos por minuto: 60 equivale a un pulso cada segundo"
+      ]
+    ],
+    "steps": [
+      "Permite el micrófono cuando el navegador lo solicite para afinar o practicar.",
+      "Sitúa el dispositivo cerca de la guitarra y evita música de fondo, ventiladores y conversaciones.",
+      "Pulsa Probar micrófono y observa el medidor. Si se pone rojo, baja la ganancia.",
+      "Con eléctrica, utiliza amplificador limpio audible o una interfaz de audio seleccionada como entrada.",
+      "Cuando se midan notas aisladas, silencia las demás cuerdas. Los acordes con resonancia requieren escucha y autoevaluación."
+    ],
+    "note": "Una nota es una altura del sonido; un pulso es un golpe regular. La tablatura indica cuerda y traste, pero no siempre contiene toda la información del ritmo."
+  },
+  {
+    "title": "4. Practicar",
+    "image": "02-estudio.jpg",
+    "intro": "El estudio central ofrece Punteo y notas, Pulso y ritmo, Arpegios y cruces y Ritmos y acordes. Los cuatro niveles de dificultad de los ejercicios son independientes de las siete etapas de Mi recorrido.",
+    "steps": [
+      "Elige una familia y un ejercicio. En acompañamiento también puedes seleccionar familia de ruedas, tonalidad, rueda, ritmo y una o dos vueltas.",
+      "Pulsa Escuchar ejemplo. Sigue la tablatura de izquierda a derecha; la primera cuerda, fina, aparece arriba.",
+      "En A mi ritmo, toca una nota clara y espera a que se verifique. No hay exigencia de velocidad. Al terminar, guarda el intento e indica el esfuerzo si se solicita.",
+      "En Con tempo, escucha la cuenta de entrada y ajusta tus ataques al pulso. El resultado se guarda al finalizar; comprueba el aviso.",
+      "Usa Lento, Medio o Rápido para trabajar con referencias comparables. Tres resultados válidos consecutivos pueden proponer un avance de velocidad.",
+      "Si un resultado no es utilizable, revisa la captura antes de subir la dificultad."
+    ],
+    "note": "En acompañamiento con tempo se comprueba el momento del ataque, no todas las notas del acorde. En modo libre se comprueban alturas aisladas; tocar la misma nota en otra cuerda puede dar acierto."
+  },
+  {
+    "title": "5. Metrónomo y tempo personalizado",
+    "image": "02-tempo.jpg",
+    "intro": "El metrónomo está disponible al elegir Con tempo. El tempo personalizado admite de 40 a 180 BPM. El volumen del clic es independiente del volumen del ejemplo y su valor inicial es 90 %.",
+    "steps": [
+      "Selecciona Con tempo y localiza el panel Pulso y tempo, junto al estudio o debajo de él en pantallas estrechas.",
+      "Activa Oír metrónomo. Utiliza Probar metrónomo para escuchar cuatro pulsos antes de practicar.",
+      "Ajusta Volumen del clic. Si no lo oyes, comprueba también el volumen y la salida de audio del dispositivo.",
+      "Despliega Tempo y retardo y mueve Tempo personalizado hasta el valor deseado. La cifra visible es la velocidad efectiva.",
+      "Mantén Compensación de retardo en 0 ms al empezar. Cámbiala solo si los ataques aparecen desplazados de forma constante pese a tocar con el pulso.",
+      "Repite primero a 60 BPM con un golpe hacia abajo por pulso. Después prueba 72 BPM con el mismo material."
+    ],
+    "note": "Un tempo personalizado permite practicar, pero no equivale por sí solo a superar una de las velocidades predefinidas. Los auriculares Bluetooth pueden añadir retardo; usa altavoz o conexión por cable para comparar con más estabilidad."
+  },
+  {
+    "title": "6. Mi sesión de hoy y herramientas del estudio",
+    "intro": "Mi sesión de hoy es una propuesta breve dentro de Practicar. AIA es un recorrido adaptativo con sesión guardada y pasos propios. Ambas opciones permiten organizar la práctica, con funciones diferentes.",
+    "steps": [
+      "En Mi sesión de hoy elige 5, 10 o 15 minutos y pulsa Empezar mi sesión. Sigue preparación, repaso, objetivo y aplicación.",
+      "Abre Laboratorio de acompañamiento para aislar cambios de acordes y llevar una rueda al estudio.",
+      "En Favoritos, fragmentos y ejecución musical puedes guardar el ejercicio actual como favorito y recuperarlo después.",
+      "Activa Tocar musicalmente cuando prefieras dejar resonar las cuerdas y valorar el conjunto por escucha. El detector nota a nota requiere cuerdas aisladas.",
+      "Para trabajar solo dos acordes de una canción, crea y guarda ese fragmento en Biblioteca.",
+      "Consulta Cómo leer y practicar y los consejos desplegables antes de comenzar un tipo de ejercicio nuevo."
+    ],
+    "note": "Ejemplo de 10 minutos: 2 para afinar y probar sonido; 3 para repasar Em–Am; 3 para trabajar el cambio C–G; 2 para aplicarlo a una rueda sencilla."
+  },
+  {
+    "title": "7. AIA y continuidad de las sesiones",
+    "image": "03-aia.jpg",
+    "intro": "AIA significa Aprendizaje Interactivo Adaptativo. Utiliza reglas sobre tu perfil, catálogo e intentos guardados para proponer un siguiente paso. Conserva el estado de la sesión en el almacenamiento de la publicación que estés usando.",
+    "steps": [
+      "Comprueba Perfil activo. Antes de una sesión nueva puedes elegir tiempo disponible, objetivo y modo: automático, A mi ritmo o Con tempo.",
+      "Pulsa Comenzar mi sesión. El recorrido tiene cuatro bloques: Prepara tu sonido, Activa y repasa, Trabaja tu próximo objetivo y Llévalo a la música.",
+      "Lee Por qué lo propone AIA. Realiza el ejercicio y guarda el resultado cuando corresponda.",
+      "Si cuesta demasiado, usa Simplificar este paso. Afinar antes de repetir abre el afinador dentro de la sesión.",
+      "Completa la autoevaluación y una nota breve para continuar. Una autoevaluación permite avanzar, pero no se presenta como una medición del micrófono.",
+      "Al volver a AIA, retoma el bloque pendiente. No reinicies la propuesta si lo que quieres es continuar la sesión anterior."
+    ],
+    "note": "Para consolidar contenido AIA busca consistencia, variantes y resultados en distintos días. Finalizar una sesión o marcar una casilla no acredita dominio musical completo."
+  },
+  {
+    "title": "8. Mi recorrido",
+    "image": "04-recorrido.jpg",
+    "intro": "Mi recorrido organiza el aprendizaje en siete etapas: Fundamentos, Mapa del mástil, CAGED, Escalas y solo, Armonía aplicada, Estilos y Autonomía. Puedes consultar las etapas sin borrar tu práctica anterior.",
+    "steps": [
+      "En Curso selecciona una etapa. Lee Concepto y Visualización en guitarra antes del Ejercicio inmediato.",
+      "Revisa Error frecuente y Aplicación musical. Sigue la rutina breve propuesta.",
+      "Pulsa Practicar aplicación para abrir un ejercicio relacionado en el estudio.",
+      "Usa Marcar práctica de hoy para registrar tu autoevaluación del recorrido.",
+      "Marca que has repetido una variante sin ayuda solo después de hacerlo. La retención se revisa otro día.",
+      "En Catálogo puedes abrir cualquiera de los ejercicios disponibles. Manuales reúne guías y documentos de referencia."
+    ],
+    "note": "El curso sirve de mapa general. Para estudiar las cinco formas y sus conexiones en detalle, abre la sección independiente Sistema CAGED."
+  },
+  {
+    "title": "9. Mástil interactivo y oído musical",
+    "image": "06-mastil.jpg",
+    "intro": "Estas herramientas están en Mi recorrido. Permiten escuchar y localizar notas y comparar sonidos sin tener que leer una partitura tradicional.",
+    "steps": [
+      "Abre Mástil interactivo y elige Nota destacada. El mapa muestra de la primera cuerda, arriba, a la sexta, abajo.",
+      "En Mostrar selecciona raíz y octavas, triada mayor o pentatónica menor. Pulsa una casilla para escuchar su nota.",
+      "Localiza, por ejemplo, Sol en sexta cuerda, traste 3. Busca otro Sol y compara el sonido.",
+      "En Oído musical selecciona Intervalos, Reconocer un ritmo o Encontrar una nota.",
+      "Escucha el objetivo, compara las referencias y elige una respuesta. Lee la corrección antes de pasar a Otra pareja.",
+      "Repite con la guitarra o con palmas. Estos ejercicios de consulta no equivalen a una toma medida del estudio."
+    ],
+    "note": "Una triada reúne raíz, tercera y quinta. Una octava es la misma nota en un registro más agudo o grave. Un intervalo es la distancia entre dos notas."
+  },
+  {
+    "title": "10. Sistema CAGED y lecciones ampliadas",
+    "image": "05-caged.jpg",
+    "intro": "CAGED conecta cinco dibujos de acordes: C/Do, A/La, G/Sol, E/Mi y D/Re. La forma es el dibujo; la tónica o raíz da nombre al acorde que suena. El módulo conserva sus 18 lecciones, las explicaciones ampliadas y el manual visual interactivo.",
+    "steps": [
+      "Elige módulo y lección en el temario. Cada lección presenta concepto, visualización, ejercicio, error, aplicación y objetivo comprobable.",
+      "Lee Comprende y practica y realiza los pasos con tu guitarra. Después intenta responder la pregunta antes de abrir la solución.",
+      "Usa Leer explicación completa de esta lección para abrir el capítulo correspondiente del manual visual.",
+      "Comprueba los tres criterios de dominio. Las casillas son una ayuda temporal; no son una certificación ni un resultado de micrófono.",
+      "Termina la rutina propuesta. Si lo has trabajado, utiliza Guardar práctica de esta lección para registrar la autoevaluación.",
+      "Avanza con Siguiente lección cuando puedas explicar y aplicar la idea, y vuelve a repasarla otro día."
+    ],
+    "note": "Ejemplo: Do mayor con forma E en el traste 8 sigue siendo Do mayor. No confundas el nombre de la forma con el nombre del acorde."
+  },
+  {
+    "title": "11. CAGED en el mapa y en la música",
+    "image": "12-caged-mapa.jpg",
+    "intro": "El explorador combina tonalidad, forma, calidad del acorde y capa musical. La tablatura y la reproducción se actualizan con esa selección.",
+    "steps": [
+      "Selecciona Acorde / tónica y Calidad: mayor, menor, dominante 7, mayor 7 o menor 7.",
+      "Elige Capa: Acorde / arpegio, Pentatónica o Escala diatónica, y una de las formas C, A, G, E o D.",
+      "Prueba Mapa completo de notas, Solo cuerdas 1ª–3ª, Ocultar nombres y Reto: encuentra la tónica. La raíz tiene etiqueta R además de color.",
+      "Pulsa una nota para oírla o utiliza Escuchar recorrido. En Tablatura guiada, cada columna es una nota sucesiva, no un rasgueo.",
+      "Selecciona una base original y Tempo del ejemplo y base, entre 40 y 180 BPM. Reproducir base de 8 compases inicia el acompañamiento.",
+      "Practicar con micrófono lleva la selección al estudio. Detén el sonido antes de cambiar de tarea."
+    ],
+    "note": "En las capas de escalas y séptimas, el mapa muestra notas de una zona, no una postura que debas pisar simultáneamente. Las jams se valoran por escucha y autoevaluación."
+  },
+  {
+    "title": "12. Acordes, ritmos y arpegios",
+    "image": "07-acordes.jpg",
+    "intro": "Esta es la denominación actual de la sección técnica. Acordes y mástil se trabaja mediante el catálogo de acordes, el mástil interactivo de Mi recorrido y el explorador CAGED.",
+    "steps": [
+      "Elige Consulta libre para explorar o Curso progresivo para trabajar por cinco niveles.",
+      "En Acordes busca por símbolo o nombre. C es Do, D es Re, E es Mi, F es Fa, G es Sol, A es La y B es Si; m indica menor.",
+      "Lee el diagrama: los números indican trastes, 0 es cuerda al aire y una cruz significa que no debes tocar esa cuerda.",
+      "Pulsa Escuchar para oír el acorde y Practicar cambio para llevar una transición al estudio.",
+      "En Secuencias de acordes elige una rueda por nivel. Escucha la secuencia y después pulsa Practicar secuencia.",
+      "Comprueba los registros al volver a la sección. Escuchar un ejemplo no lo marca automáticamente como superado."
+    ],
+    "note": "Empieza por Em, Am, C, G y D. En acordes con cejilla, utiliza posiciones cómodas y descansos breves; no fuerces la mano para completar un dibujo."
+  },
+  {
+    "title": "13. Ritmos y rasgueos con acordes",
+    "image": "08-ritmos.jpg",
+    "intro": "Los 16 patrones incluyen compases de 4/4, 3/4 y 6/8. Cada tarjeta permite asociar un acorde o una rueda de acordes; la escucha y la práctica utilizan esa selección.",
+    "steps": [
+      "Abre Ritmos y elige un patrón sencillo, como Cuatro golpes. Lee primero la cuenta situada sobre las flechas.",
+      "En Un acorde selecciona Em u otro acorde. Mantén la postura mientras repites el patrón.",
+      "Cambia a Rueda de acordes para usar la progresión sugerida. Cambia al inicio del compás siguiente, después de los pulsos indicados.",
+      "Escucha el ejemplo, sintetizado a 72 pulsos por minuto. Después pulsa Practicar Em o Practicar rueda, según tu selección.",
+      "Cuenta cada número como pulso y cada «y» como su mitad. La mano mantiene el movimiento incluso cuando aparece silencio.",
+      "Añade apagados, bajos y contratiempos después de mantener el pulso con un patrón básico."
+    ],
+    "note": "Los acordes de las tarjetas son propuestas didácticas, no las armonías obligatorias de un estilo ni de una canción conocida. Elige vals o 6/8 después de comprobar el compás de la pieza."
+  },
+  {
+    "title": "14. Arpegios y aplicación al repertorio",
+    "image": "09-arpegios.jpg",
+    "intro": "Un arpegio toca las notas del acorde una tras otra. El catálogo ofrece cinco pasos de fingerpicking con patrones A y B, desde pulgar e índice hasta un bajo más independiente.",
+    "steps": [
+      "Abre Arpegios. Lee el acorde, el número de notas, el consejo y la fila de cuerdas del patrón.",
+      "Distingue los dedos: p es pulgar, i índice, m medio y a anular. Primera cuerda es la fina; sexta, la gruesa.",
+      "Elige Patrón A o Patrón B y pulsa Escuchar patrón. Reproduce lentamente una vuelta antes de repetirla.",
+      "Ejercicio relacionado abre un ejercicio de la misma familia, que puede ser distinto del patrón exacto de la tarjeta.",
+      "Para una canción propia, utiliza Biblioteca y Practicar arpegio propuesto después de guardar un fragmento revisado.",
+      "Conserva un bajo estable y una mano relajada. Cambia de acorde sin acelerar las notas agudas."
+    ],
+    "note": "Repertorio se trabaja actualmente con las piezas de Biblioteca, las secuencias y los documentos de Mi recorrido. El catálogo independiente de Repertorio progresivo sigue pendiente de ampliación."
+  },
+  {
+    "title": "15. Biblioteca y guardado del original",
+    "image": "10-biblioteca.jpg",
+    "intro": "Guardar un archivo y preparar una práctica son dos acciones diferentes. Puedes conservar el original sin leerlo ni corregir acordes. Se admiten PDF, JPG, PNG y WebP de hasta 12 MB.",
+    "steps": [
+      "Pulsa Nueva canción si quieres empezar una ficha distinta. Si tienes cambios pendientes, guárdalos antes de descartarlos.",
+      "Selecciona el archivo y revisa Título y Artista. Guarda con Guardar archivo; no es obligatorio pulsar Leer archivo.",
+      "Espera el aviso Archivo guardado en Mi biblioteca y comprueba que la canción aparece en el índice.",
+      "Para recuperarla, búscala por título o artista y pulsa su ficha. La recuperación carga el original y la lectura guardada.",
+      "Una canción guardada como pendiente de revisión todavía no activa los botones de práctica.",
+      "Si recuperas un borrador sin original, vuelve a adjuntar el mismo archivo siguiendo el aviso. Se conservan las correcciones del borrador."
+    ],
+    "note": "En Sites el guardado requiere una sesión válida. En GitHub el original permanece en el navegador. Un borrador recuperado no sustituye a un guardado confirmado."
+  },
+  {
+    "title": "16. Biblioteca y preparación de una práctica",
+    "image": "13-biblioteca-practica.jpg",
+    "intro": "Leer archivo extrae texto o intenta reconocer una imagen. La lectura automática necesita revisión: reconoce texto y tablaturas de seis líneas, no una partitura completa de pentagrama.",
+    "steps": [
+      "Para PDF selecciona Desde página y Hasta página. Si está escaneado o falla el texto, prueba Leer como imagen. Puedes cancelar la lectura.",
+      "Corrige Texto leído y pulsa Detectar acordes y notas del texto. Revisa avisos, cejilla, tempo y versión.",
+      "En Secuencia de acordes escribe, por ejemplo, Em | C | G | D. Se admiten hasta 16 acordes por fragmento; el original completo se conserva.",
+      "En Notas revisadas utiliza cuerda:traste, como 1:0, 1:1, 1:3. Puedes añadir notas visualmente. El límite es 128 notas por fragmento.",
+      "Selecciona Ritmo para acompañar. En Pulsos de cada acorde puedes indicar 4, 2, 2, 4; en blanco se utiliza un compás completo por acorde.",
+      "Marca He revisado los acordes, las notas y el fragmento y pulsa Guardar práctica revisada. Después se activan las prácticas compatibles con el contenido guardado."
+    ],
+    "note": "Si un botón permanece desactivado, lee «Para guardar la práctica falta». Un acorde sin diagrama o una nota fuera de cuerdas 1–6 y trastes 0–24 debe corregirse antes de practicar."
+  },
+  {
+    "title": "17. Visor ampliado, fragmentos y tutoriales",
+    "image": "17-visor.jpg",
+    "intro": "Desde una canción recuperada puedes ampliar el original, recorrerlo y preparar distintas partes para practicar. Estas funciones no modifican por sí solas el archivo original.",
+    "steps": [
+      "Pulsa Ver a pantalla grande · zoom y desplazamiento. Utiliza +, − o Ajustar ancho; el zoom va de 50 % a 250 %.",
+      "En PDF, desplázate entre las páginas. En imágenes, recorre el documento completo. Abrir original permite verlo en otra pestaña.",
+      "Pulsa Desplazar automáticamente y ajusta Velocidad. Pausar desplazamiento lo detiene; tocar o desplazar el documento manualmente también lo pausa.",
+      "Cierra con Cerrar visor o Escape. El visor vuelve a la ficha de la canción.",
+      "En Fragmentos y versiones pon un nombre, como Estrofa, y pulsa Conservar este fragmento. Guarda los cambios para conservarlo de forma permanente.",
+      "Buscar tutoriales ofrece vídeos o enlaces de búsqueda según la publicación. Comprueba artista, cejilla, afinación y versión antes de seguirlos."
+    ],
+    "note": "La grabación opcional se descarga localmente; no se guarda como resultado de progreso. La papelera permite restaurar canciones. No borres datos del navegador para resolver un problema de lectura."
+  },
+  {
+    "title": "18. Mi progreso y lectura de resultados",
+    "image": "15-progreso.jpg",
+    "intro": "Mi progreso muestra los intentos guardados y distingue las tomas utilizables. Los resultados describen lo que el detector ha podido medir, con los límites de cada modo.",
+    "steps": [
+      "Consulta Intentos guardados, Tomas utilizables y Último resultado. Un valor vacío significa que no hay un resultado disponible para ese indicador.",
+      "Revisa cada habilidad. Compara el mismo ejercicio, modo, patrón y velocidad; evita comparar prácticas diferentes como si fueran equivalentes.",
+      "En Historial completo elige Todo el historial, 7 días o 30 días. Anterior y Siguiente recorren páginas de 20 intentos.",
+      "Notas muestra el resultado de alturas cuando corresponde. Pulso recoge el ajuste temporal; en modo libre no se evalúa velocidad.",
+      "Si aparece Repetir toma, revisa ruido, señal y configuración. No lo interpretes automáticamente como un fallo musical.",
+      "Guardar resumen PDF abre la impresión del navegador. Elige Guardar como PDF y comprueba el resultado antes de archivarlo."
+    ],
+    "note": "Tres aciertos consecutivos orientan el avance de velocidad. El aprendizaje completo requiere retener, aplicar y repetir en otras variantes, además de obtener una buena puntuación."
+  },
+  {
+    "title": "19. Profesor, mi instrumento y perfil",
+    "image": "14-profesor.jpg",
+    "intro": "Profesor reúne Mi perfil de guitarrista, ayuda conectada, propuestas de mejora y copias de seguridad. Mi instrumento y Perfiles no tienen actualmente pantallas independientes ni un selector de varios guitarristas dentro de esta interfaz.",
+    "steps": [
+      "Completa Nombre, Guitarra, Quiero trabajar y Minutos por sesión. Las opciones de guitarra son Española, Acústica y Eléctrica con sonido limpio.",
+      "Pulsa Guardar mi perfil una vez y espera el mensaje de confirmación. Si falla, comprueba la conexión antes de reintentar.",
+      "En Sites, selecciona Guitarra PRO en ChatGPT y pide una recomendación basada en tu progreso. La conversación por voz depende de las funciones disponibles en tu cuenta.",
+      "En GitHub, el progreso local no se entrega automáticamente al profesor de ChatGPT. Puedes compartir un resumen o trasladar una copia a Sites.",
+      "Usa Ayuda y sugerencias para guardar una propuesta. No es una conversación en directo ni garantiza una modificación automática de la app.",
+      "Para seguir con otro dispositivo, utiliza Copias y traslado de mis datos."
+    ],
+    "note": "El perfil activo es el que aparece en el menú y en AIA. Sincronizar el código conserva las funciones, pero no crea perfiles nuevos ni fusiona cuentas."
+  },
+  {
+    "title": "20. Copias y traslado entre publicaciones",
+    "intro": "La copia JSON transporta perfil, historial, estado de AIA y registros de trabajo compatibles. Los originales de Biblioteca y las grabaciones se trasladan por separado.",
+    "steps": [
+      "En Profesor abre Copias y traslado de mis datos y pulsa Exportar copia JSON.",
+      "Guarda el archivo descargado en un lugar de confianza. Conserva también los PDF, imágenes y grabaciones originales.",
+      "En la publicación de destino abre el mismo apartado y utiliza Seleccionar copia JSON. La app comprueba que corresponda a Guitarra PRO y a un formato compatible.",
+      "Lee el resumen antes de pulsar Combinar con mis datos. Puedes cancelar sin importar.",
+      "La importación combina registros y evita duplicados; puede actualizar estados como el perfil según las fechas y las reglas de conflicto. Conserva una copia del destino antes de combinar.",
+      "Pulsa Recargar mis datos después de la importación. Revisa perfil, historial y AIA y vuelve a subir los originales de las canciones que quieras utilizar allí."
+    ],
+    "note": "La copia tiene un límite de 5 MB y no es una copia de los archivos originales de la biblioteca. Guardar el código de la aplicación en GitHub tampoco guarda tus canciones personales."
+  },
+  {
+    "title": "21. Afinador de seis cuerdas",
+    "image": "16-afinador.jpg",
+    "intro": "La afinación estándar, de gruesa a fina, es Mi–La–Re–Sol–Si–Mi. La nomenclatura grande indica cuerda y nota; la pequeña, como E2, utiliza la notación internacional y su octava.",
+    "steps": [
+      "Pulsa Activar afinador y permite el micrófono. Silencia las demás cuerdas.",
+      "En Auto empieza por la sexta. Toca una sola cuerda suavemente y deja una señal estable.",
+      "Si indica Está grave, tensa un poco. Si indica Está aguda, afloja un poco. Ajusta la clavija gradualmente.",
+      "En automático, una lectura estable dentro de aproximadamente ±5 cents durante 0,75 segundos marca la cuerda en verde oscuro y pasa a la siguiente.",
+      "Usa selección manual si una cuerda está muy desviada. Escuchar cuerda reproduce una referencia; Reiniciar afinación borra las marcas temporales de la sesión.",
+      "La de referencia empieza en 440 Hz y admite 430–450 Hz. Mantén 440 Hz salvo que tengas una referencia musical distinta."
+    ],
+    "note": "Un cent es una centésima de semitono. Las marcas del afinador son comprobaciones de esta sesión, no un historial permanente de afinaciones."
+  },
+  {
+    "title": "22. Manuales, accesibilidad e instalación",
+    "image": "11-manuales.jpg",
+    "intro": "El acceso principal a esta guía está en Biblioteca → Manuales → Manual de uso de Guitarra PRO. El PDF sirve para consultar e imprimir; Word permite editar. También se conserva el acceso desde Mi recorrido y los materiales del estudio.",
+    "steps": [
+      "Abre Manuales y pulsa Descargar manual de uso PDF. Si el navegador lo abre en una pestaña, utiliza su botón de descarga.",
+      "Para una copia editable pulsa Manual de uso Word editable. El manual visual CAGED sigue disponible por separado.",
+      "En móvil abre Menú para acceder a Biblioteca y a las demás secciones. Gira el dispositivo si necesitas más anchura para los diagramas.",
+      "Activa Letra grande o Aa. Los mástiles y tablas anchos pueden tener su propio desplazamiento horizontal.",
+      "Puedes añadir la web a la pantalla de inicio con las opciones del navegador. La disponibilidad del botón Instalar depende del sistema y del navegador.",
+      "El icono previsto es la púa con guitarra. Si ves un icono antiguo, comprueba la URL y vuelve a crear el acceso desde la publicación correcta."
+    ],
+    "note": "La privacidad de Sites se mantiene. El icono servido por la aplicación está configurado, pero la instalación y sus cachés deben comprobarse en cada dispositivo; este manual no presupone una instalación verificada en todos los sistemas."
+  },
+  {
+    "title": "23. Problemas frecuentes y soluciones",
+    "table": [
+      [
+        "Qué ocurre",
+        "Qué hacer"
+      ],
+      [
+        "No se guarda una canción",
+        "Comprueba título, archivo y conexión o almacenamiento local. Guardar archivo no exige lectura ni revisión."
+      ],
+      [
+        "No se activa Practicar",
+        "Revisa los avisos, confirma el fragmento y guarda la práctica revisada."
+      ],
+      [
+        "La lectura es incorrecta",
+        "Corrige el texto, limita las páginas o prueba Leer como imagen. No sustituye una transcripción de pentagrama."
+      ],
+      [
+        "El ejemplo se oye bajo",
+        "Comprueba salida del dispositivo, volumen del ejemplo y refuerzo. El clic tiene su propio volumen."
+      ],
+      [
+        "El detector falla",
+        "Silencia otras cuerdas, baja ruido y revisa la ganancia y el permiso de micrófono."
+      ],
+      [
+        "Todo aparece tarde o pronto",
+        "Repite con conexión por cable antes de ajustar compensación de retardo."
+      ],
+      [
+        "Faltan mis datos en GitHub",
+        "Comprueba navegador y perfil. Usa una copia JSON y los originales para trasladarlos."
+      ],
+      [
+        "AIA muestra una sesión anterior",
+        "Es la continuidad guardada. Retómala; inicia una nueva propuesta solo si quieres reemplazar el plan activo."
+      ],
+      [
+        "El visor no dibuja el PDF",
+        "Abre el original en otra pestaña. No vuelvas a subirlo si ya está guardado."
+      ],
+      [
+        "No encuentro Repertorio o Perfiles",
+        "Consulta Biblioteca para piezas y Profesor para el perfil activo; no son secciones independientes actuales."
+      ]
+    ],
+    "note": "Si un problema persiste, anota publicación, dispositivo, navegador, sección, botón utilizado y mensaje exacto. No borres datos ni importes repetidamente como primer intento de solución."
+  },
+  {
+    "title": "24. Colores, enlaces y versión",
+    "intro": "Manual de uso 1.1 · 11 de noviembre de 2026. Aplicación edición 8, revisión de manuales y sincronización. Las capturas se han tomado durante esta revisión y muestran los controles reales; el contenido personal puede variar en tu cuenta.",
+    "table": [
+      [
+        "Color",
+        "Uso orientativo"
+      ],
+      [
+        "#0F4F45",
+        "Verde oscuro de portada y cabeceras"
+      ],
+      [
+        "#187B68",
+        "Verde principal y acciones"
+      ],
+      [
+        "#10243D",
+        "Texto destacado y contraste"
+      ],
+      [
+        "#E8F2EE",
+        "Paneles y avisos suaves"
+      ],
+      [
+        "#F6F8F7",
+        "Fondo claro de trabajo"
+      ]
+    ],
+    "steps": [
+      "Sites privado: https://guitarra-pro.joserabalconesa.chatgpt.site/",
+      "GitHub Pages: https://jrabalconesa.github.io/guitarra-pro/",
+      "Código y control de cambios: https://github.com/jrabalconesa/guitarra-pro",
+      "Manual PDF en GitHub: https://jrabalconesa.github.io/guitarra-pro/manuales/Guitarra_PRO_Manual_de_Uso.pdf"
+    ],
+    "note": "Actualización del manual: revisar al añadir o cambiar funciones, navegación, guardado o reglas de aprendizaje. Los pequeños ajustes visuales no exigen regenerarlo. La publicación comprueba versión, archivos y correspondencia con las funciones documentadas."
+  },
+  {
+    "title": "25. Actualización de práctica y sonido",
+    "intro": "Actualización del 12 de noviembre de 2026. Véase capítulo 25 añadido al manual completo.",
+    "steps": [
+      "El clic utiliza un tono menos agudo y una duración mayor. Mantiene su propio control de volumen y la opción Probar metrónomo. El volumen del ejemplo se ajusta por separado. La salida conserva compresión y limitación para reducir los picos; comprueba el nivel del dispositivo antes de tocar.",
+      "A tiempo, Adelantadas y Atrasadas indican el número de ataques asociados a posiciones previstas y su porcentaje. El denominador es la suma de esas tres categorías. Los golpes adicionales y las posiciones omitidas se muestran aparte. Los tres porcentajes suman aproximadamente el 100 %, salvo redondeo; si no se asocia ningún ataque, los tres son cero.",
+      "A tiempo 9 (64,3 %) · Adelantadas 3 (21,4 %) · Atrasadas 2 (14,3 %) · Extras 2 · Omitidas 2 · Media +24 ms. Son cifras ilustrativas: los porcentajes se calculan sobre 14 ataques asociados. En móvil o tableta, desliza únicamente esta línea para ver todos los datos. También admite el foco del teclado.",
+      "Extras son ataques detectados que no se han podido asociar a una posición libre dentro de su ventana temporal. Omitidas son posiciones previstas sin ataque asociado. El filtro exige una nueva subida de energía después de un descenso y adapta el antirrebote a las subdivisiones del ejercicio. El ruido, la resonancia o una señal débil todavía pueden afectar a la detección. Los silencios no generan ataques previstos; los apagados sí. El sistema evalúa su momento, no la técnica del apagado."
+    ]
+  }
+]
