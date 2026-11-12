@@ -1,13 +1,13 @@
 {
   "version": "1.1",
-  "reviewed_on": "2026-11-11",
+  "reviewed_on": "2026-11-12",
   "app_edition": 8,
   "review_scope": "Funciones, navegación, almacenamiento, biblioteca, CAGED y aprendizaje adaptativo",
   "policy": "Revisar cambios significativos. Para un ajuste menor se puede actualizar la constancia de revisión sin regenerar PDF ni Word.",
   "reviewed_source_sha256": {
     "app/page.tsx": "c1ff34bf89ee8a6812dec5e94174e563d53645193901715c54d5a9f7440ff8ca",
-    "app/practice-studio.tsx": "57a14f0f2f89f65fa290b70abc28a4769c6af77ffa682fc87a8b23a3d27fd7d9",
-    "app/song-library.tsx": "e5335e11989319f218996b1a0140420c18cf37af5bc706a8f7f0371ed7dfab68",
+    "app/practice-studio.tsx": "d5e3114293ecc507149b39036969a83b394cdc6271dc4a254b4dd4709e01101c",
+    "app/song-library.tsx": "c76efed5c60b0fb9af20633d9d6990a6fc1910096b7633f93b3fc2a2031d346d",
     "app/song-reader.ts": "c5ab156b0bdf78b945db3ec205c1bcbe042bcc27dc61c2bcca43f280189477c9",
     "app/song-viewer.tsx": "e8c0dd3161f8cf7ca85d5dc96b9960cd80ab4f40ae1e19eb0591aded8056afc3",
     "app/aia.tsx": "dbb9100ed103c03f68b4ad56ab89dc5f030667de02f878fa8f1c131c7b314aff",
@@ -17,12 +17,13 @@
     "app/tuner.tsx": "517bfdc0456a1d418f475a1409489807f82a32c27f995eb144711d57de97b160",
     "app/data-transfer.tsx": "f1b95682e38950229246c8036c8a647a79547c81b47cb79eb080ab6bb0cafb45",
     "app/manual-links.tsx": "b1056adc425f3097794a48fdcb3b641825cdccebd842367fc6378c778ec3c829",
-    "lib/song-import.mjs": "1f1043f491850583ef84085e2099b4e41b75d5b89bc06517fcf8c9fb95bca614",
+    "lib/song-import.mjs": "37aa8774599f6f694ebc85f25684e9f596aa2a0e479895b40eb34a3961f3d77e",
     "lib/playback-settings.mjs": "0be5e68b7cdcbcd6d8f626069372b7b61a5cb857cb52b58023d5f00621205dad"
   },
   "outputs": {
     "public/manuales/Guitarra_PRO_Manual_de_Uso.pdf": "09c1e10082147deb50483f51a86804cb6c847a0660b4dd13b6b9b0ec4cdbc0ef",
     "public/manuales/Guitarra_PRO_Manual_de_Uso.docx": "a52e3c169b00984064a05909e2335c21016c41e127b69dd90ede81dc631c66e8",
     "public/manuales/Guitarra_PRO_Manual_de_Uso_Pack.zip": "2cf50dcae18c34f86f602c32508f81d221536fc8fe61f5ef4b37046cf72192cb"
-  }
+  },
+  "review_note": "Corrección menor: el tempo de canción ya documentado en capítulos 5 y 16 se respeta al abrir práctica y reproducción. Se hace visible el campo existente y se añade ayuda contextual de referencia, búsqueda y lectura de BPM explícitos. Los pasos de revisión y guardado del manual 1.1 siguen siendo aplicables; no se regeneran sus archivos."
 }
