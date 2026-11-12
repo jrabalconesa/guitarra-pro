@@ -1,6 +1,6 @@
 {
-  "sites_version": 50,
-  "sites_commit": "248d0272e2ab865d49b1abea6652bde5bcfdf0aa",
+  "sites_version": 51,
+  "sites_commit": "fcd9500bb1ac5ee4ff68439c6bc2bb87fd329ae7",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
@@ -63,7 +63,7 @@
     "public/branding/guitarra-pro-icon-192.png": "86ab3fffb5b34ec8aade339d793ae92b53a93e4548330300c54e6ddc84f0279f",
     "public/branding/guitarra-pro-icon-32.png": "77b582fe6637ee62bcd16f4aaf750aaf764570c1304f93727a78d5aef42dfeb8",
     "public/branding/guitarra-pro-icon-512.png": "78895d37ca452e6f29990804cbef992066c79c52c92deef3096af49c7cb48d12",
-    "app/pro-nav-icon.tsx": "c7cc22eb5edb53dc44466d8a2ff11a5d65d22ab99e9eb9128fea0a2f9d54d512",
+    "app/pro-nav-icon.tsx": "a0cce71df0e7963372c0c4fb0704a16178f0c77b5e02283fe7c199f1f110618e",
     "app/technique-catalog.tsx": "9c2a165d56fd870e61252dc452c81cb5fc15cb060be82583dba5086a72134fca",
     "app/api/backup/route.ts": "a991c4da39118a0b49d7835403bcb6429dc7dcc9835f0cc5ebcee1ff9a5f9957",
     "app/data-transfer.tsx": "f1b95682e38950229246c8036c8a647a79547c81b47cb79eb080ab6bb0cafb45",
