@@ -18,7 +18,9 @@ jobs:
         with:
           node-version: '22'
       - name: Restaurar activos sin sobrescribir
-        run: cat public-assets.part* | tar --skip-old-files -xz
+        run: |
+          cat public-assets.part* | tar --skip-old-files -xz
+          node scripts/restore-manual-assets.mjs
       # La verificación estricta de paridad con Sites sigue en pages.yml;
       # una rama de cambios debe pasar primero tests/build y sincronizarse antes del merge.
       - name: Probar contenido musical y regresiones

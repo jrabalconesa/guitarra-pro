@@ -45,3 +45,7 @@ yarn-error.log*
 .DS_Store
 
 /dist-pages/
+
+# Verified learning assets restored by scripts/restore-manual-assets.mjs
+/public/manual-aprendizaje/
+/public/guitar-samples/
