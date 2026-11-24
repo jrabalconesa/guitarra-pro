@@ -1,4 +1,5 @@
 'use client';
+import {profileFetch as fetch} from '../lib/profile-fetch';
 import {useEffect,useRef,useState} from 'react';
 import {mergeFretboard,validFretboardState} from '../lib/fretboard.mjs';
 export function useFretboardProgress(){

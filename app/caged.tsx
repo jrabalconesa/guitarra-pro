@@ -1,4 +1,5 @@
 'use client';
+import {profileFetch as fetch} from '../lib/profile-fetch';
 import FretboardExplorer from './fretboard-explorer';
 import {useEffect,useRef,useState} from 'react';
 import {Play,Square,Download,Volume2} from 'lucide-react';

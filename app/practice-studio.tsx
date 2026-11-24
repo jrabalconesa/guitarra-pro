@@ -1,4 +1,5 @@
 'use client';
+import {profileFetch as fetch} from '../lib/profile-fetch';
 import {initialPracticeTempo} from '../lib/song-tempo.mjs';
 import ManualLinks from './manual-links';
 import {MIN_TEMPO,MAX_TEMPO,normalizeTempo} from '../lib/playback-settings.mjs';

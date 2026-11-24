@@ -1,4 +1,5 @@
 'use client';
+import {profileFetch as fetch} from '../lib/profile-fetch';
 import {useEffect,useRef,useState} from 'react';
 import {emptyManualState,validManualState,mergeManualState} from '../lib/manual-course.mjs';
 import {accountStorageKey,readLocal,writeLocal} from '../lib/client-storage.mjs';

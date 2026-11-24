@@ -6,7 +6,7 @@ const GROUPS:[string,string[]][]=[
  ['APRENDER Y PRACTICAR',['practica','aia','ruta']],
  ['TÉCNICA Y REPERTORIO',['caged','tecnica','biblioteca']],
  ['MI APRENDIZAJE',['progreso','profesor']],
- ['INSTRUMENTOS Y CONFIGURACIÓN',['afinador']]
+ ['INSTRUMENTOS Y CONFIGURACIÓN',['afinador','perfiles']]
 ];
 export default function Navigation({tabs,icons,tab,onNavigate}:{tabs:string[][],icons:Record<string,any>,tab:string,onNavigate:(id:string)=>void}){
  const [open,setOpen]=useState(false),dialog=useRef<HTMLDialogElement>(null);

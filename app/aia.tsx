@@ -1,4 +1,5 @@
 'use client';
+import {profileFetch as fetch} from '../lib/profile-fetch';
 import {useFretboardProgress} from './fretboard-progress';
 import {boardReview,labelNote} from '../lib/fretboard.mjs';
 import {useEffect,useMemo,useRef,useState} from 'react';

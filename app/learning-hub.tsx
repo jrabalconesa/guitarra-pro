@@ -1,4 +1,5 @@
 'use client';
+import {profileFetch as fetch} from '../lib/profile-fetch';
 import FretboardExplorer from './fretboard-explorer';
 import ManualLinks from './manual-links';
 import {useEffect,useState,useRef} from 'react';
