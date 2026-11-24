@@ -1,4 +1,6 @@
 'use client';
+import {useFretboardProgress} from './fretboard-progress';
+import {boardReview,labelNote} from '../lib/fretboard.mjs';
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {ArrowRight,RefreshCw,Play,Square,Download,Check,AudioLines} from 'lucide-react';
 import PracticeStudio from './practice-studio';
@@ -7,7 +9,8 @@ import {AudioPrefs,useGuitarAudio} from './audio-engine';
 import {chords} from '../lib/music.mjs';
 import {chordTargets} from '../lib/audio-analysis.mjs';
 const TRACKS=[['auto','Según mi perfil'],['melodia','Notas y mástil'],['ritmo','Pulso y ritmo'],['arpegio','Arpegios'],['acompanamiento','Acompañamiento'],['caged','Sistema CAGED']];
-export default function Aia({prefs,onPrefs,onMessage,onProfile,onLibrary,onCaged,onHistoryChange}:{prefs:AudioPrefs,onPrefs:(p:AudioPrefs)=>void,onMessage:(s:string)=>void,onProfile:()=>void,onLibrary:()=>void,onCaged:()=>void,onHistoryChange:()=>void}){
+export default function Aia({prefs,onPrefs,onMessage,onProfile,onLibrary,onCaged,onHistoryChange,onMap}:{onMap:(r:any)=>void,prefs:AudioPrefs,onPrefs:(p:AudioPrefs)=>void,onMessage:(s:string)=>void,onProfile:()=>void,onLibrary:()=>void,onCaged:()=>void,onHistoryChange:()=>void}){
+ const fretProgress=useFretboardProgress(),fretReview=boardReview(fretProgress.state);
  const [data,setData]=useState<any>(null),[error,setError]=useState(''),[busy,setBusy]=useState(false),[studioBusy,setStudioBusy]=useState(false),[settings,setSettings]=useState<any>(null),[tuning,setTuning]=useState(false),[self,setSelf]=useState(''),[note,setNote]=useState(''),[playing,setPlaying]=useState(false);
  const request=useRef(0),lock=useRef(false),audio=useGuitarAudio(prefs),soundRun=useRef(0),mounted=useRef(true);
  async function refresh(){const id=++request.current;try{const r=await fetch('/api/aia',{cache:'no-store'}),d:any=await r.json();if(!r.ok)throw Error(d.error);if(id===request.current&&mounted.current){setData(d);setSettings(d.settings);setError('');}}catch(e){if(mounted.current&&id===request.current)setError(e instanceof Error?e.message:'No se pudo cargar AIA.')}}
@@ -22,6 +25,7 @@ export default function Aia({prefs,onPrefs,onMessage,onProfile,onLibrary,onCaged
  if(!data)return <section className="form-card aia-loading"><h1>AIA · Aprendizaje Interactivo</h1><p role="status">{error||'Preparando el recorrido del perfil activo…'}</p>{error&&<button className="secondary" onClick={()=>void refresh()}>Reintentar</button>}</section>;
  const plan=data.preview,current=active?session:plan,primary=current.steps.find((s:any)=>s.type==='practice'&&s.id==='work')?.assignment||plan.steps[2].assignment;
  return <section className="aia-section"><div className="page-heading"><div><div className="eyebrow">APRENDIZAJE INTERACTIVO ADAPTATIVO</div><h1>AIA · Aprendizaje Interactivo</h1><p>Tu próxima práctica, elegida según lo que ya has conseguido.</p></div><a className="secondary" href="/manuales/AIA_Guia_de_Uso.pdf" download><Download size={17}/>Guía de AIA</a></div>
+ <section className="form-card"><h2>Tu repaso del mástil</h2>{fretReview?<><p>{fretReview.errors?'Conviene repetir':'Comprueba la retención de'} {labelNote(fretReview.note)} en {fretReview.string}ª cuerda: {fretReview.errors} errores en {fretReview.total} respuestas en pantalla. Se prioriza la mayor proporción de errores; en empate, la referencia menos reciente.</p><button className="secondary" onClick={()=>onMap(fretReview)}>Repasar esta nota en el mapa</button></>:<><p>Encuentra, nombra y relaciona notas por octavas. Los retos guardados orientan este repaso sin alterar tus etapas medidas.</p><button className="secondary" onClick={()=>onMap({})}>Explorar el mapa del mástil</button></>}<p className="tiny">{fretProgress.status} Responder en pantalla y tocar con micrófono son resultados diferentes; no se mezclan sus puntuaciones.</p>{fretProgress.failed&&<button className="secondary" onClick={fretProgress.retry}>Reintentar carga del mapa</button>}</section>
  <div className="aia-profile"><span className="aia-monogram" aria-hidden="true">AIA</span><div><b>Perfil activo: {data.profile.name}</b><span>{data.profile.guitar} · {data.profile.goal}</span></div><button className="secondary" onClick={onProfile}>Ver mi perfil</button></div>
  {error&&<div className="notice" role="alert">{error}<button className="secondary" disabled={busy||studioBusy} onClick={()=>void refresh()}>Actualizar AIA</button></div>}
  {data.staleProfile&&<p role="status">El perfil ha cambiado. La propuesta ya usa sus objetivos actuales; prepara una sesión nueva.</p>}
