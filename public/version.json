@@ -1,6 +1,6 @@
 {
-  "sites_version": 56,
-  "sites_commit": "e789d746faf7b696aa8f96ee27ebc2690ce92e6f",
+  "sites_version": 57,
+  "sites_commit": "4b7c4915041a9887c2e804427135c92f4fcab098",
   "storage": "browser-indexeddb",
   "source_sha256": {
     "app/daily-session.tsx": "c162292e90dee69ac1e74be3614815afc10d8c77677033acc4d4d79044a0dde9",
@@ -57,7 +57,7 @@
     "lib/song-import.mjs": "37aa8774599f6f694ebc85f25684e9f596aa2a0e479895b40eb34a3961f3d77e",
     "lib/song-timeline.test.mjs": "bb75c67b828eac87d7695c48e879992d3ec7e24dae68712d787c4bfa203e01a3",
     "lib/rhythms.mjs": "6ea1dd26a288fbd16f9d1644a0606634ddc323d35b93f76a65131476924ac029",
-    "lib/aia.mjs": "35bcf704a64cf7b4d13986d6d42f816d5a4d6c8af462bf45fe55de64224fca32",
+    "lib/aia.mjs": "ee88bc4a01ead15fc4c833c679abcd3c1e1845284531bd7a6bf8bd4e24d28a69",
     "public/favicon.ico": "6296045eadb884f4c53a61c8b9952002f1f48b4e71718a5b97a7ead55be40455",
     "public/branding/apple-touch-icon.png": "f5117e419172fbf065645428b0ca897336c394da170da935d2d43506c57d2c5f",
     "public/branding/guitarra-pro-icon-192.png": "86ab3fffb5b34ec8aade339d793ae92b53a93e4548330300c54e6ddc84f0279f",
@@ -107,7 +107,7 @@
     "app/api/profiles/route.ts": "3a5ad5802fb9e8aae6d29c7bc30f1efd541a2a85eeb11ba5d944853dad6290af",
     "app/learner-panel.tsx": "86005efccef80c746fd166481c2170133008d40b5027acb59a3ed497e741cbbe",
     "lib/profile-fetch.ts": "60a7933ef867c6c007fbe7d9e91075a118e7452ac84e78ea6ea7684008e98553",
-    "lib/learner-profiles.test.mjs": "8b90f637802b1acf9211e18dac2b7914a93f4c7d389056cb1122da25dbce18bb",
+    "lib/learner-profiles.test.mjs": "5b184f91c1d33d90cf59cf99261cd27db23c37f717b83cf142654057779a3e96",
     "lib/learner-profiles.mjs": "da19f4b4d8bb27558b918fc2cd99250276a327b21b243e8465efd298850b5b8c"
   },
   "release": "profiles-instruments-2026-11-24",

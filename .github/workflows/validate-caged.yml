@@ -24,7 +24,7 @@ jobs:
       # La verificación estricta de paridad con Sites sigue en pages.yml;
       # una rama de cambios debe pasar primero tests/build y sincronizarse antes del merge.
       - name: Probar contenido musical y regresiones
-        run: node --test lib/*.test.mjs
+        run: node --test lib/*.test.mjs pages/*.test.mjs
       - name: Instalar dependencias
         run: npm install --ignore-scripts --legacy-peer-deps --no-audit --no-fund
       - name: Construir versión de GitHub Pages (sin desplegar)

@@ -36,7 +36,7 @@
     "app/tuner.tsx": "517bfdc0456a1d418f475a1409489807f82a32c27f995eb144711d57de97b160",
     "lib/accompaniment-lab.mjs": "c00c66566bae14b5a2a249583806a93b67e4c029c79594c2313901967b617eb7",
     "lib/aia-store.ts": "b7baa22beb4e7cf471cfbfafcc4a36d6a6fbcc2ddab8c13f31f738f25b95ed98",
-    "lib/aia.mjs": "35bcf704a64cf7b4d13986d6d42f816d5a4d6c8af462bf45fe55de64224fca32",
+    "lib/aia.mjs": "ee88bc4a01ead15fc4c833c679abcd3c1e1845284531bd7a6bf8bd4e24d28a69",
     "lib/aia.test.mjs": "53ab2b1cbffe9a7fb43bb029d5488751f2cfd25c0b335c48373055b32077d912",
     "lib/audio-analysis.mjs": "d4fcc39be7cf5477bb96930262806bf166aa6d986c854343be0b8f2100092e34",
     "lib/audio-analysis.test.mjs": "9cf5ca9e7617d948c190be8dbf6135964680686f75fb93dcb8ba507ac441da4f",
@@ -98,7 +98,7 @@
     "app/use-manual-progress.ts": "0a3f40948a497ec287ef2718ad0d1c868a0da48b36af8e3b6279dff93685743b",
     "lib/manual-course.mjs": "b455b8668d1340052733a87c29d4d4675785117858aa92a0d34ad74d31e2f42e",
     "lib/guitar-samples.mjs": "4aa0ea747ef52251b624cc2dfe3550a7e19e1cce47594b80d51282bb4556666f",
-    "lib/learner-profiles.test.mjs": "8b90f637802b1acf9211e18dac2b7914a93f4c7d389056cb1122da25dbce18bb",
+    "lib/learner-profiles.test.mjs": "5b184f91c1d33d90cf59cf99261cd27db23c37f717b83cf142654057779a3e96",
     "public/branding/guitarra-pro-icon-512.png": "78895d37ca452e6f29990804cbef992066c79c52c92deef3096af49c7cb48d12",
     "lib/learner-profiles.mjs": "da19f4b4d8bb27558b918fc2cd99250276a327b21b243e8465efd298850b5b8c",
     "lib/manual-catalog.mjs": "2e4b948bb0f0f160c741b39a9f68c4334e43330c6eed130d7fcc198a4a807420",
@@ -119,5 +119,5 @@
       "policy": "Platform-specific URL adapter. Preserve the Site-relative and GitHub Pages absolute/public form; do not copy either version verbatim over the other."
     }
   },
-  "release": "profile-history-consolidation-2026-11-27"
+  "release": "profile-isolation-aia-originals-2026-11-27"
 }

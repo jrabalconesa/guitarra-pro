@@ -26,7 +26,7 @@ jobs:
           cat public-assets.part* | tar --skip-old-files -xz
           node scripts/restore-manual-assets.mjs
       - run: node scripts/verify-pages-source.mjs
-      - run: node --test lib/*.test.mjs
+      - run: node --test lib/*.test.mjs pages/*.test.mjs
       - run: npm install --ignore-scripts --legacy-peer-deps --no-audit --no-fund
       - run: npm run build:pages
       - uses: actions/configure-pages@v5
